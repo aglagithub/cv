@@ -312,7 +312,7 @@ const home = () => {
               Rick and Morty
             </div>
             <div className="text-lg  text-[#8491A0] bg-[#0b0b0b]  px-2">
-            Presentación de los pesonajes contenidos en los episodios de la serie de televisión Rick and Morty.Presentación de página con personajes que parecieron en un lugar específico.  Datos obtenidos por API. 
+            Pesonajes contenidos en los episodios de la serie de televisión Rick and Morty.Página con personajes que parecieron en un lugar específico. Datos obtenidos por API. 
               <div className="underline text-md text-[#a31a2e]">
                 <a
                   href="https://academloreactentregable3.netlify.app/"
