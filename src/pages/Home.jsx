@@ -246,7 +246,7 @@ const home = () => {
                   href="https://academloreactentregable5.netlify.app/pokedex"
                   target="_blank"
                 >
-                  <img className="" src="\public\images\pokedex.png" alt="" />
+                  <img className="" src="\images\pokedex.png" alt="" />
                 </a>
               </div>
             </div>
