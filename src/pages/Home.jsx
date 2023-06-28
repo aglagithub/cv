@@ -53,7 +53,7 @@ const home = () => {
             <div className="text-lg pb-2">
               Mantenimiento del software para registro de la operación de la
               mesa de servicios de TI y gestión de la plataforma web de la
-              entidad
+              mesa de servicios de la entidad.
             </div>
           </section>
 
@@ -79,7 +79,7 @@ const home = () => {
             </div>
             <div className="text-lg  pb-2">
               Empecé mi carrera como desarrollador de aplicaciones de softaware
-              aplicadas a electrónica
+              aplicadas a electrónica.
             </div>
           </section>
         </div>
@@ -457,7 +457,7 @@ const home = () => {
             >
               <i class="bx bxl-linkedin-square text-[#0A66C2]"></i>
             </a>
-            <a className="pr-4" href="" target="_blank">
+            <a className="pr-4" href="https://www.facebook.com/profile.php?id=100088672094738" target="_blank">
               <i class="bx bxl-facebook-circle text-[#1B74E4]"></i>
             </a>
             <a
