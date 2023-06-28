@@ -11,22 +11,26 @@ const home = () => {
         <div className="text-3xl ">Andres Lara</div>
 
         <div className="flex justify-self-center text-[#8491a0]">
-          <a className="pr-2" href="#destrezas">Destrezas </a>
-          <a className="pr-2" href="#proyectos">Proyectos </a>
-          <a  href="#contacto">Contacto </a>
+          <a className="pr-2" href="#destrezas">
+            Destrezas
+          </a>
+          <a className="pr-2" href="#proyectos">
+            Proyectos
+          </a>
+          <a href="#contacto">Contacto </a>
         </div>
       </header>
 
       {/* Description */}
       <article className="pb-8  flex flex-row flex-wrap items-center justify-around">
-        <div className="pb-2 w-[350px] round-lg">
+        <div className="pb-2 w-[320px] round-lg">
           <img src="/images/FotoAGLA1.jpg"></img>
         </div>
-        <div className="text-4xl leading-8 w-[350px]">
+        <div className="text-4xl leading-8 w-[320px]">
           Mi nombre es Andres Lara. desarrollador Full Stack&nbsp;
           <span className="text-[#8491a0]">ubicado en Colombia.</span>
-          <br></br>   <br></br>
-          <div className="text-3xl w-[350px] ">
+          <br></br> <br></br>
+          <div className="text-3xl w-[320px] ">
             Soy ingeniero comprometido con su trabajo. Si tiene un proyecto de
             desarrollo de aplicaciones web, soy la persona que busca.
           </div>
@@ -61,7 +65,7 @@ const home = () => {
               </span>
             </div>
             <div className="text-lg  pb-2">
-              He trabajado en proyectos de software para aplicaciones de
+              Gestión de proyectos de software para aplicaciones de
               lógistica. Seguimiento de vehiculos y control de entregas. Gestión
               del sitio web de la compañia.
             </div>
@@ -74,7 +78,7 @@ const home = () => {
               Ingeniero Desarrollador
             </div>
             <div className="text-lg  pb-2">
-              Empecé mi carrera como desarrollador de apliciones de softaware
+              Empecé mi carrera como desarrollador de aplicaciones de softaware
               aplicadas a electrónica
             </div>
           </section>
@@ -83,7 +87,7 @@ const home = () => {
 
       {/* Philosofia y valores */}
       <article className="pb-4 flex flex-row flex-wrap justify-center">
-        <div className="bg-[#fff3E4] w-[350px] px-4 p-2 pb-4">
+        <div className="bg-[#fff3E4] w-[320px] px-4 p-2 pb-4">
           <div className="text-4xl pb-4 text-black">Filosofía y valores</div>
           <div className="text-lg text-[#8491A0] ">
             Creo que se debe estar comprometido con los proyectos encomendados.
@@ -101,14 +105,14 @@ const home = () => {
             </a>
           </div>
         </div>
-        {/*   <div className="w-[350px]">
+        {/*   <div className="w-[320px]">
           <img src="/images/test/FotoGroupOfPeople.png" alt="" />
         </div> */}
       </article>
       {/* Skillset */}
       <section className="">
         <article className="pb-4 flex flex-row flex-wrap gap-2">
-          <div className="w-[350px] px-2">
+          <div className="w-[320px] px-2">
             <div id="destrezas" className="text-4xl pb-4">
               Destrezas
             </div>
@@ -119,7 +123,7 @@ const home = () => {
             </div>
           </div>
 
-          <div className="flex flex-row flex-wrap space-around">
+          <div className="flex flex-row flex-wrap justify-center gap-2">
             {/* Skill #1 */}
             <div className="pt-4 pb-3 px-2">
               <div className="pb-1">
@@ -151,7 +155,7 @@ const home = () => {
               <div className="text-xl font-semibold">Lenguajes</div>
               <ul className="text-[#8491A0]">
                 <li>HTML</li>
-                <li>CSS/SASS</li>
+                <li>CSS</li>
                 <li>Javascript</li>
                 <li>Python</li>
               </ul>
@@ -172,7 +176,7 @@ const home = () => {
       </section>
 
       {/* Companies Logos*/}
-      <article className="pb-6">
+    {/*   <article className="pb-6">
         <div className="flex flex-row flex-wrap justify-center">
           <div className="border-solid border-1 mt-2 ">
             <img src="/images/icfes.png" />
@@ -180,7 +184,7 @@ const home = () => {
           <div className="border-solid border-1">
             <img src="/images/VL.png" />
           </div>
-          {/* <div className="border-solid border-1">
+          <div className="border-solid border-1">
             <img src="\images\test\LogoProject04.png" />
           </div>
           <div className="border-solid border-1">
@@ -188,77 +192,135 @@ const home = () => {
           </div>
           <div className="border-solid border-1">
             <img src="\images\test\LogoProject06.png" />
-          </div> */}
+          </div> 
         </div>
-      </article>
+      </article>*/}
 
       {/* MyProjects*/}
 
-      <section id="proyectos" className="flex flex-row flex-wrap self-center mb-4">
-        <div className="w-[350px]">
+      <section
+        id="proyectos"
+        className="flex flex-row flex-wrap self-center mb-4"
+      >
+        <div className="w-[320px]">
           <div className="px-2">
             <div></div>
             <div className="text-3xl pb-4">
-              Algunos proyectos Académicos que he realizado:
+              Algunos proyectos que he realizado:
             </div>
           </div>
           {/* Proyecto 1*/}
-          <article className="pb-4">
+          <article className="pb-5">
             <div>
-              <img src="\images\test\FotoProject1.png" alt="" />
+              <div className="underline text-md text-[#a31a2e]">
+                <a
+                  href="https://ecommerceacademloandreslara.netlify.app/"
+                  target="_blank"
+                >
+                  <img src="\images\TiemdaModulo1.png" alt="" />
+                </a>
+              </div>
             </div>
             <div className="text-xl font-semibold  px-2 pb-2">
-              Restaurant Website Design
+              Frontend Tienda
             </div>
             <div className="text-lg  text-[#8491A0] bg-[#0b0b0b]  px-2">
-              I worked with the guys at CBRE to redesign their entire website
-              and mobile app fro both Android and iOS. This project lasted for 4
-              months and was a very challenging one.
+              FrontEnd Tienda. Listado de productos obtenidos por servicio web. Funcionalidad
+              para Carrito de compras.
+              <div className="underline text-md text-[#a31a2e]">
+                <a
+                  href="https://ecommerceacademloandreslara.netlify.app/"
+                  target="_blank"
+                >
+                  Enlace
+                </a>
+              </div>
             </div>
           </article>
 
           {/* Proyecto 2*/}
-          <article className="pb-4">
+          <article className="pb-5 pr-2">
             <div>
-              <img src="\images\test\FotoProject2.png" alt="" />
+              <div className="underline text-md text-[#a31a2e]">
+                <a
+                  href="https://academloreactentregable5.netlify.app/pokedex"
+                  target="_blank"
+                >
+                  <img className="" src="public\images\pokedex.png" alt="" />
+                </a>
+              </div>
             </div>
-            <div className="text-xl font-semibold px-2 pb-2">
-              Mobile Dashboard
+            <div className="text-xl font-semibold  px-2 pb-2">
+            Visualización de Pokedex
             </div>
             <div className="text-lg  text-[#8491A0] bg-[#0b0b0b]  px-2">
-              I worked with the guys at CBRE to redesign their entire website
-              and mobile app fro both Android and iOS. This project lasted for 4
-              months and was a very challenging one.
+              Presentación de los contenidos de las figuras de la serie de televisión Pokemon. Datos obtenidos por API. Login, maquetación del conjunto, paginación y presentación de página información de un personaje.
+              <div className="underline text-md text-[#a31a2e]">
+                <a
+                  href="https://academloreactentregable5.netlify.app/pokedex"
+                  target="_blank"
+                >
+                  Enlace
+                </a>
+              </div>
             </div>
           </article>
         </div>
-        <div className="w-[350px]">
+        <div className="w-[320px]">
           {/* Proyecto 3*/}
-          <article className="pb-4">
+          <article className="pb-5">
             <div>
-              <img src="\images\test\FotoProject3.png" alt="" />
+              <div className="underline text-md text-[#a31a2e]">
+                <a
+                  href="https://academloreactentregable4.netlify.app/"
+                  target="_blank"
+                >
+                  <img src="\images\FichasUsuario.png" alt="" />
+                </a>
+              </div>
             </div>
-            <div className="text-xl font-semibold px-2 pb-2">
-              CoinView Mobile App Design
+            <div className="text-xl font-semibold  px-2 pb-2">
+              Tarjetas información de usuarios
             </div>
             <div className="text-lg  text-[#8491A0] bg-[#0b0b0b]  px-2">
-              I worked with the guys at CBRE to redesign their entire website
-              and mobile app fro both Android and iOS. This project lasted for 4
-              months and was a very challenging one.
+              Aplicacion para manejo de tarjetas con información de usuarios. Es
+              posible crear, editar y borrar tarjetas con la información
+              almacenada en un servidor. Acceso por servicio web.
+              <div className="underline text-md text-[#a31a2e]">
+                <a
+                  href="https://academloreactentregable4.netlify.app/"
+                  target="_blank"
+                >
+                  Enlace
+                </a>
+              </div>
             </div>
           </article>
           {/* Proyecto 4*/}
-          <article className="pb-4">
+          <article className="pb-5">
             <div>
-              <img src="\images\test\FotoProject4.png" alt="" />
+              <div className="underline text-md text-[#a31a2e]">
+                <a
+                  href="https://academloreactentregable3.netlify.app/"
+                  target="_blank"
+                >
+                  <img src="\images\RickAndMorty.png" alt="" />
+                </a>
+              </div>
             </div>
-            <div className="text-xl font-semibold px-2 pb-2">
-              T-Box Mobile Design
+            <div className="text-xl font-semibold  px-2 pb-2">
+              Rick and Morty
             </div>
             <div className="text-lg  text-[#8491A0] bg-[#0b0b0b]  px-2">
-              I worked with the guys at CBRE to redesign their entire website
-              and mobile app fro both Android and iOS. This project lasted for 4
-              months and was a very challenging one.
+            Presentación de los pesonajes contenidos en los episodios de la serie de televisión Rick and Morty.Presentación de página con personajes que parecieron en un lugar específico.  Datos obtenidos por API. 
+              <div className="underline text-md text-[#a31a2e]">
+                <a
+                  href="https://academloreactentregable3.netlify.app/"
+                  target="_blank"
+                >
+                  Enlace
+                </a>
+              </div>
             </div>
           </article>
           {/*    <button className="border-solid border-[1px] border-blue-700 px-3 py-2">
@@ -270,7 +332,7 @@ const home = () => {
       {/* Behance*/}
       {/* 
       <section className="pb-4 flex flex-row flex-wrap mx-auto">
-        <div className=" bg-[#FBE4FF] w-[350px]">
+        <div className=" bg-[#FBE4FF] w-[320px]">
           <div className="text-3xl pb-4 text-black">Behance</div>
           <div className="text-lg text-[#5B6876] px-2 text-justify">
             If you area a person who enjoys photography, then I highly recommend
@@ -287,7 +349,7 @@ const home = () => {
             </a>
           </div>
         </div>
-        <div className=" bg-black w-[350px]">
+        <div className=" bg-black w-[320px]">
           <img src="\images\test\BehanceImage.png" alt="" />
         </div>
       </section>
@@ -306,25 +368,26 @@ const home = () => {
       </section> */}
 
       {/* Formulario de contacto*/}
-      <div id="contacto" className="text-4xl pb-4">Contacto</div>
+      <div id="contacto" className="text-4xl pb-4">
+        Contacto
+      </div>
       <article className="pb-4 flex flex-row flex-wrap justify-center ">
-        <div className="w-[350px]">
+        <div className="w-[320px]">
           <div className="text-lg text-[#5B6876] pb-2 px-2 mt-3">
             Ahora que ya conoce bastante acerca de mi, digame si tiene interés
             en trabajar conmigo.
             <div className=" mt-2">
-              Contacto Telefónico:&nbsp;
+              Teléfono:&nbsp;
               <a className=" text-[#5221EB]" href="tel:+573173167289">
-              +57-3173167289
+                +57-3173167289
               </a>
             </div>
             <div className=" mt-2">
-              Contacto Email:&nbsp; 
+              Email:&nbsp;
               <a className=" text-[#5221EB]" href="mailto:angillama@gmail.com">
                 angillama@gmail.com
               </a>
             </div>
-         
           </div>
         </div>
         <div className="pb-6 mx-auto">
@@ -373,27 +436,36 @@ const home = () => {
       </article>
 
       {/* footer */}
-      <footer className="pb-5 flex flex-row flex-wrap items-center justify-center bg-[#25292d] pt-3 pl-3 ">
-        <section className="w-[350px] ">
+      <footer className="pb-5 flex flex-row flex-wrap items-center justify-center bg-[#25292d] pl-3 ">
+        <section className="w-[320px] ">
           <div className="pb-4 pt-4">
             <div className="text-2xl">Andres Lara</div>
           </div>
 
-          <div >
-            <a className="pr-3" href="https://twitter.com/andresLaraamaya" target="_blank">
-              <i className="bx bxl-twitter"></i>
+          <div>
+            <a
+              className="pr-4 "
+              href="https://twitter.com/andresLaraamaya"
+              target="_blank"
+            >
+              <i className="bx bxl-twitter text-[#1DB9F0]"></i>
             </a>
-            <a className="pr-3"
+            <a
+              className="pr-4"
               href="https://www.linkedin.com/in/andreslaraamaya/"
               target="_blank"
             >
-              <i class="bx bxl-linkedin-square"></i>
+              <i class="bx bxl-linkedin-square text-[#0A66C2]"></i>
             </a>
-            <a className="pr-3" href="" target="_blank">
-              <i class="bx bxl-facebook-circle"></i>
+            <a className="pr-4" href="" target="_blank">
+              <i class="bx bxl-facebook-circle text-[#1B74E4]"></i>
             </a>
-            <a className="pr-3" href="https://github.com/aglagithub" target="_blank">
-            <i class='bx bxl-github'></i>
+            <a
+              className="pr-4"
+              href="https://github.com/aglagithub"
+              target="_blank"
+            >
+              <i class="bx bxl-github "></i>
             </a>
           </div>
         </section>
@@ -424,7 +496,7 @@ const home = () => {
           </div> */}
         </section>
       </footer>
-      <div className="mx-auto">&copy;2023</div>
+      <div className="mx-auto pt-3">&copy;2023</div>
     </main>
   );
 };

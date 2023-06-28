@@ -13,11 +13,11 @@ const CVModel = () => {
 
       {/* Description */}
       <article className="pb-8  flex flex-row flex-wrap">
-        <div className="pb-2 w-[350px]">
+        <div className="pb-2 w-[320px]">
           <img src="/images/test/FotoPersona.png"></img>
         </div>
-        <div className="text-4xl leading-8 w-[350px]">
-          I'm Robin Williams. A front end developer{" "}
+        <div className="text-4xl leading-8 w-[320px]">
+          I'm Robin Williams. A front end developer
           <span className="text-[#8491a0]">based in Mexico.</span>
           <div className="text-xl">
             I'm probably the most passionate designer you will ever get to work
@@ -74,7 +74,7 @@ const CVModel = () => {
 
       {/* Philosofia y valores */}
       <article className="pb-4 flex flex-row flex-wrap">
-        <div className="bg-[#fff3E4] w-[350px] px-4 p-2 pb-4">
+        <div className="bg-[#fff3E4] w-[320px] px-4 p-2 pb-4">
           <div className="text-4xl pb-4 text-black">Philosophy & values</div>
           <div className="text-lg text-[#8491A0] ">
             I think everyone wants the same thing - relationship with humanity,
@@ -92,14 +92,14 @@ const CVModel = () => {
             </a>
           </div>
         </div>
-        <div className="w-[350px]">
+        <div className="w-[320px]">
           <img src="/images/test/FotoGroupOfPeople.png" alt="" />
         </div>
       </article>
       {/* Skillset */}
       <section className="">
         <article className="pb-4 flex flex-row flex-wrap gap-2">
-          <div className="w-[350px]">
+          <div className="w-[320px]">
             <div className="text-4xl pb-4">Skillset</div>
             <div className="text-lg  ">
               With skills in over 4 different fields of design, I am the perfect
@@ -185,7 +185,7 @@ const CVModel = () => {
       {/* MyProjects*/}
 
       <section className="flex flex-row flex-wrap">
-        <div className="w-[350px]">
+        <div className="w-[320px]">
           <div className="px-2">
             <div>MY PROJECTS</div>
             <div className="text-3xl pb-4">
@@ -220,7 +220,7 @@ const CVModel = () => {
             </div>
           </article>
         </div>
-        <div className="w-[350px]">
+        <div className="w-[320px]">
           {/* Proyecto 3*/}
           <article className="pb-4">
             <div>
@@ -253,7 +253,7 @@ const CVModel = () => {
 
       {/* Behance*/}
       <section className="pb-4 flex flex-row flex-wrap mx-auto">
-        <div className=" bg-[#FBE4FF] w-[350px]">
+        <div className=" bg-[#FBE4FF] w-[320px]">
           <div className="text-3xl pb-4 text-black">Behance</div>
           <div className="text-lg text-[#5B6876] px-2 text-justify">
             If you area a person who enjoys photography, then I highly recommend
@@ -270,7 +270,7 @@ const CVModel = () => {
             </a>
           </div>
         </div>
-        <div className=" bg-black w-[350px]">
+        <div className=" bg-black w-[320px]">
           <img src="\images\test\BehanceImage.png" alt="" />
         </div>
       </section>
@@ -288,7 +288,7 @@ const CVModel = () => {
 
       {/* Formulario de contacto*/}
       <article className="pb-4 flex flex-row flex-wrap">
-        <div className="w-[350px]">
+        <div className="w-[320px]">
           <div className="text-4xl pb-4">Let's talk business</div>
           <div className="text-lg text-[#5B6876] pb-2">
             Now that you know a lot about me, let me know if you are interested
@@ -343,7 +343,7 @@ const CVModel = () => {
       </article>
        {/* footer */}
       <footer className="pb-9 flex flex-row flex-wrap">
-        <section className="w-[350px]">
+        <section className="w-[320px]">
           <div className="pb-4 pt-4">
             <img src="/images/test/ImageNombre.png" alt="" />
           </div>
