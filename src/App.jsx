@@ -7,7 +7,7 @@ import CVModel from "./pages/CVModel"
 function App() {
   return (
     <>
-      <main className="font-['Sen'] flex flex-col flex-wrap">
+      <main className="font-['Sen'] flex flex-col flex-wrap bg-black">
         <Routes>
         <Route path="/" element={<Home /> }/>
         <Route path="/en" element={<CVEnglish />}/>

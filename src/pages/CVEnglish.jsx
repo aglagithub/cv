@@ -2,8 +2,8 @@ import React from "react";
 
 const CVEnglish = () => {
   return (
-<main>
-  CV In English
+<main className="text-black bg-white">
+  CV in English
 </main>
 
   );
