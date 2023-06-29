@@ -457,6 +457,7 @@ const CVEnglish = () => {
             </a>
             <a
               className="pr-4"
+              
               href="https://github.com/aglagithub"
               target="_blank"
             >
@@ -491,7 +492,7 @@ const CVEnglish = () => {
         </div> */}
         </section>
       </footer>
-      <div className="mx-auto pt-3">&copy;2023</div>
+      <div className="mx-auto pt-3">&copy;2023 </div>
     </main>
   );
 };

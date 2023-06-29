@@ -19,6 +19,7 @@ const home = () => {
           </a>
           <a href="#contacto">Contacto </a>
         </div>
+        
       </header>
 
       {/* Description */}
@@ -36,6 +37,7 @@ const home = () => {
           </div>
         </div>
       </article>
+
 
       {/* Work experience */}
       <article className="pb-4">
