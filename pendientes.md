@@ -13,7 +13,7 @@
 --- menu
 -presentación
 -work experience
-- filodofis yvslores
+- filodofia y valores
 -link a linkedin
 -fhoto
 -skill set
@@ -25,4 +25,3 @@
 .. menu
 
 
-"Hello"

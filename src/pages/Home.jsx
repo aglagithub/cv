@@ -39,7 +39,7 @@ const home = () => {
 
       {/* Work experience */}
       <article className="pb-4">
-        <div>WORK EXPERIENCE</div>
+        <div>EXPERIENCIA LABORAL</div>
         <div className="text-4xl pb-4">Proyectos en los que he trabajado</div>
         {/* Work items */}
         <div className="flex flex-row flex-wrap justify-around self-center">
@@ -51,9 +51,7 @@ const home = () => {
               Especialista
             </div>
             <div className="text-lg pb-2">
-              Mantenimiento del software para registro de la operación de la
-              mesa de servicios de TI y gestión de la plataforma web de la
-              mesa de servicios de la entidad.
+              Mantenimiento del software de la mesa de servicios de TI y gestión de la plataforma web de la entidad.
             </div>
           </section>
 
@@ -397,7 +395,7 @@ const home = () => {
           >
             <div className="pb-2 ">
               <label className="block pb-1" htmlFor="name">
-                Name
+                Nombre
               </label>
               <input
                 className="block bg-[#25292d] "
@@ -419,7 +417,7 @@ const home = () => {
             </div>
             <div className="block pb-4">
               <label className="block pb-1" htmlFor="message">
-                Message
+                Mensaje
               </label>
               <textarea
                 className="block bg-[#25292d]"
