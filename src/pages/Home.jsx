@@ -23,7 +23,7 @@ const home = () => {
       </header>
 
       {/* Description */}
-      <article className="pb-8  flex flex-row flex-wrap items-center justify-around">
+      <article className="pb-10  flex flex-row flex-wrap items-center justify-around">
         <div className="pb-2 w-[320px] round-lg">
           <img src="/images/FotoAGLA1.jpg"></img>
         </div>
@@ -152,7 +152,7 @@ const home = () => {
       </article>
 
       {/* Philosofia y valores */}
-      <article className="pb-4 flex flex-row flex-wrap justify-center">
+      <article className="pb-8 flex flex-row flex-wrap justify-center">
         <div className="bg-[#fff3E4] w-[320px] px-4 p-2 pb-4">
           <div className="text-4xl pb-4 text-black">Filosofía y valores</div>
           <div className="text-lg text-[#8491A0] ">

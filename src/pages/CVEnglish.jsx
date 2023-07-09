@@ -11,13 +11,13 @@ const CVEnglish = () => {
         <div className="text-3xl ">Andres Lara</div>
 
         <div className="flex justify-self-center text-[#8491a0]">
-          <a className="pr-2" href="#destrezas">
+          <a className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-white" href="#destrezas">
             Abilities
           </a>
-          <a className="pr-2" href="#proyectos">
+          <a className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-white" href="#proyectos">
             Projects
           </a>
-          <a href="#contacto">Contact </a>
+          <a className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-white" href="#contacto">Contact </a>
         </div>
       </header>
 
@@ -37,76 +37,8 @@ const CVEnglish = () => {
         </div>
       </article>
 
-      {/* Work experience */}
-      <article className="pb-4">
-        <div>WORK EXPERIENCE</div>
-        <div className="text-4xl pb-4">Projects I have worked on</div>
-        {/* Work items */}
-        <div className="flex flex-row flex-wrap justify-around self-center">
-          <section className="pb-4 w-[280px] pr-2">
-            <div className="text-[#8491a0] text-8xl">01</div>
-
-            <div className="text-2xl">
-              <span className="text-[#3CC74E]">ICFES</span> Specialist Engineer.
-            </div>
-            <div className="text-lg pb-2">
-            IT service desk software maintenance  and web platform management.
-            </div>
-          </section>
-
-          <section className="pb-4 w-[280px] pr-2">
-            <div className="text-[#8491a0] text-8xl">02</div>
-            <div className="text-2xl">
-              <span className="text-[#609bff]">
-                Vision Logísitica Internacional
-              </span>
-            </div>
-            <div className="text-lg  pb-2">
-              Management of software projects for logistics applications.
-              Vehicle tracking and delivery control. Management of the company's
-              website.
-            </div>
-          </section>
-
-          <section className="pb-4 w-[280px] pr-2">
-            <div className="text-[#8491a0] text-8xl">03</div>
-            <div className="text-2xl">
-              <span className="text-[#e95d90]">Independent Professional</span>
-            </div>
-            <div className="text-lg  pb-2">
-              I started my career as a developer of software applications
-              applied to electronics.
-            </div>
-          </section>
-        </div>
-      </article>
-
-      {/* Philosofia y valores */}
-      <article className="pb-4 flex flex-row flex-wrap justify-center">
-        <div className="bg-[#fff3E4] w-[320px] px-4 p-2 pb-4">
-          <div className="text-4xl pb-4 text-black">Philosophy and values</div>
-          <div className="text-lg text-[#8491A0] ">
-            I believe that you must be committed to the projects entrusted.
-            Continuously improving based on self-criticism and dialogue with
-            stakeholders. I carry out my work with creativity, self-criticism
-            and continuous improvement.
-          </div>
-          <div className="">
-            <a
-              className="underline underline-offset-8 text-black"
-              href="https://www.linkedin.com/in/andreslaraamaya/"
-              target="_blank"
-            >
-              Check my Linkedin page
-            </a>
-          </div>
-        </div>
-        {/*   <div className="w-[320px]">
-        <img src="/images/test/FotoGroupOfPeople.png" alt="" />
-      </div> */}
-      </article>
       {/* Skillset */}
-      <section className="">
+      <section className="pb-4">
         <article className="pb-4 flex flex-row flex-wrap gap-2">
           <div className="w-[320px] px-2">
             <div id="destrezas" className="text-4xl pb-4">
@@ -122,6 +54,7 @@ const CVEnglish = () => {
             <div className="pt-4 pb-3 px-2">
               <div className="pb-1">
                 <img src="/images/test/IconoSkillSet.png" alt="" />
+                {/* <img src="/images/test/IconoSkillSetIluminado_w_trans.png" alt="" /> */}
               </div>
               <div className="text-xl font-semibold">Frameworks</div>
               <ul className="text-[#8491A0]">
@@ -169,6 +102,77 @@ const CVEnglish = () => {
         </article>
       </section>
 
+
+      {/* Work experience */}
+      <article className="pb-4">
+        <div>WORK EXPERIENCE</div>
+        <div className="text-4xl pb-4">Projects I have worked on</div>
+        {/* Work items */}
+        <div className="flex flex-row flex-wrap justify-around self-center">
+          <section className="pb-4 w-[280px] pr-2">
+            <div className="text-[#8491a0] text-8xl">01</div>
+
+            <div className="text-2xl">
+              <span className="text-[#3CC74E]">ICFES</span> Specialist Engineer.
+            </div>
+            <div className="text-lg pb-2">
+            IT service desk software maintenance  and web platform management.
+            </div>
+          </section>
+
+          <section className="pb-4 w-[280px] pr-2">
+            <div className="text-[#8491a0] text-8xl">02</div>
+            <div className="text-2xl">
+              <span className="text-[#609bff]">
+                Vision Logísitica Internacional
+              </span>
+            </div>
+            <div className="text-lg  pb-2">
+              Management of software projects for logistics applications.
+              Vehicle tracking and delivery control. Management of the company's
+              website.
+            </div>
+          </section>
+
+          <section className="pb-4 w-[280px] pr-2">
+            <div className="text-[#8491a0] text-8xl">03</div>
+            <div className="text-2xl">
+              <span className="text-[#e95d90]">Independent Professional</span>
+            </div>
+            <div className="text-lg  pb-2">
+              I started my career as a developer of software applications
+              applied to electronics.
+            </div>
+          </section>
+        </div>
+      </article>
+
+      {/* Philosofia y valores */}
+      <article className="pb-8 flex flex-row flex-wrap justify-center">
+        <div className="bg-[#fff3E4] w-[320px] px-4 p-2 pb-4">
+          <div className="text-4xl pb-4 text-black">Philosophy and values</div>
+          <div className="text-lg text-[#8491A0] ">
+            I believe that you must be committed to the projects entrusted.
+            Continuously improving based on self-criticism and dialogue with
+            stakeholders. I carry out my work with creativity, self-criticism
+            and continuous improvement.
+          </div>
+          <div className="">
+            <a
+              className="underline underline-offset-8 text-black"
+              href="https://www.linkedin.com/in/andreslaraamaya/"
+              target="_blank"
+            >
+              Check my Linkedin page
+            </a>
+          </div>
+        </div>
+        {/*   <div className="w-[320px]">
+        <img src="/images/test/FotoGroupOfPeople.png" alt="" />
+      </div> */}
+      </article>
+
+      
       {/* Companies Logos*/}
       {/*   <article className="pb-6">
       <div className="flex flex-row flex-wrap justify-center">
@@ -194,7 +198,7 @@ const CVEnglish = () => {
 
       <section
         id="proyectos"
-        className="flex flex-row flex-wrap self-center mb-4"
+        className="flex flex-row flex-wrap self-center mb-4 "
       >
         <div className="w-[320px]">
           <div className="px-2">
