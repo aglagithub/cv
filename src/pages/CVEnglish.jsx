@@ -446,14 +446,14 @@ const CVEnglish = () => {
               href="https://www.linkedin.com/in/andreslaraamaya/"
               target="_blank"
             >
-              <i class="bx bxl-linkedin-square text-[#0A66C2]"></i>
+              <i className="bx bxl-linkedin-square text-[#0A66C2]"></i>
             </a>
             <a
               className="pr-4"
               href="https://www.facebook.com/profile.php?id=100088672094738"
               target="_blank"
             >
-              <i class="bx bxl-facebook-circle text-[#1B74E4]"></i>
+              <i className="bx bxl-facebook-circle text-[#1B74E4]"></i>
             </a>
             <a
               className="pr-4"
@@ -461,7 +461,7 @@ const CVEnglish = () => {
               href="https://github.com/aglagithub"
               target="_blank"
             >
-              <i class="bx bxl-github "></i>
+              <i className="bx bxl-github "></i>
             </a>
           </div>
         </section>

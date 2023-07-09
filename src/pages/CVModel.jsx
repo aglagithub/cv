@@ -356,10 +356,10 @@ const CVModel = () => {
               href="https://www.linkedin.com/in/andreslaraamaya/"
               target="_blank"
             >
-              <i class="bx bxl-linkedin-square"></i>
+              <i className="bx bxl-linkedin-square"></i>
             </a>
             <a href="" target="_blank">
-              <i class="bx bxl-facebook-circle"></i>
+              <i className="bx bxl-facebook-circle"></i>
             </a>
           </div>
         </section>

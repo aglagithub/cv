@@ -11,13 +11,13 @@ const home = () => {
         <div className="text-3xl ">Andres Lara</div>
 
         <div className="flex justify-self-center text-[#8491a0]">
-          <a className="pr-2" href="#destrezas">
+          <a className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-white" href="#destrezas">
             Destrezas
           </a>
-          <a className="pr-2" href="#proyectos">
+          <a className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-white" href="#proyectos">
             Proyectos
           </a>
-          <a href="#contacto">Contacto </a>
+          <a className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-white" href="#contacto">Contacto </a>
         </div>
         
       </header>
@@ -37,6 +37,72 @@ const home = () => {
           </div>
         </div>
       </article>
+
+ {/* Skillset */}
+ <section className="">
+        <article className="pb-4 flex flex-row flex-wrap gap-2">
+          <div className="w-[320px] px-2">
+            <div id="destrezas" className="text-4xl pb-4">
+              Destrezas
+            </div>
+            <div className="text-lg  ">
+              Con destrezas en diferentes areas del diseño. Soy la persona a
+              contratar para un proyecto de diseño web.Estoy dispuesto a
+              emprender cualquier reto en este campo.
+            </div>
+          </div>
+
+          <div className="flex flex-row flex-wrap justify-center gap-2">
+            {/* Skill #1 */}
+            <div className="pt-4 pb-3 px-2">
+              <div className="pb-1">
+                <img src="/images/test/IconoSkillSet.png" alt="" />
+              </div>
+              <div className="text-xl font-semibold">Frameworks</div>
+              <ul className="text-[#8491A0]">
+                <li>React</li>
+                <li>Redux</li>
+                <li>Next.js</li>
+              </ul>
+            </div>
+            {/* Skill #2 */}
+            <div className="pt-4 pb-3 px-2">
+              <div className="pb-1">
+                <img src="/images/test/IconoSkillSet.png" alt="" />
+              </div>
+              <div className="text-xl font-semibold">Source Control</div>
+              <ul className="text-[#8491A0]">
+                <li>Git/Github</li>
+                <li>SCRUM / Agil</li>
+              </ul>
+            </div>
+            {/* Skill #3 */}
+            <div className="pt-4 pb-3 px-2">
+              <div className="pb-1">
+                <img src="/images/test/IconoSkillSet.png" alt="" />
+              </div>
+              <div className="text-xl font-semibold">Lenguajes</div>
+              <ul className="text-[#8491A0]">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Python</li>
+              </ul>
+            </div>
+            {/* Skill #4 */}
+            <div className="pt-4 pb-3 px-2">
+              <div className="pb-1">
+                <img src="/images/test/IconoSkillSet.png" alt="" />
+              </div>
+              <div className="text-xl font-semibold">UX/UI</div>
+              <ul className="text-[#8491A0]">
+                <li>Figma</li>
+                <li>Tailwind</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
 
 
       {/* Work experience */}
@@ -109,72 +175,7 @@ const home = () => {
           <img src="/images/test/FotoGroupOfPeople.png" alt="" />
         </div> */}
       </article>
-      {/* Skillset */}
-      <section className="">
-        <article className="pb-4 flex flex-row flex-wrap gap-2">
-          <div className="w-[320px] px-2">
-            <div id="destrezas" className="text-4xl pb-4">
-              Destrezas
-            </div>
-            <div className="text-lg  ">
-              Con destrezas en diferentes areas del diseño. Soy la persona a
-              contratar para un proyecto de diseño web.Estoy dispuesto a
-              emprender cualquier reto en este campo.
-            </div>
-          </div>
-
-          <div className="flex flex-row flex-wrap justify-center gap-2">
-            {/* Skill #1 */}
-            <div className="pt-4 pb-3 px-2">
-              <div className="pb-1">
-                <img src="/images/test/IconoSkillSet.png" alt="" />
-              </div>
-              <div className="text-xl font-semibold">Frameworks</div>
-              <ul className="text-[#8491A0]">
-                <li>React</li>
-                <li>Redux</li>
-                <li>Next.js</li>
-              </ul>
-            </div>
-            {/* Skill #2 */}
-            <div className="pt-4 pb-3 px-2">
-              <div className="pb-1">
-                <img src="/images/test/IconoSkillSet.png" alt="" />
-              </div>
-              <div className="text-xl font-semibold">Source Control</div>
-              <ul className="text-[#8491A0]">
-                <li>Git/Github</li>
-                <li>SCRUM / Agil</li>
-              </ul>
-            </div>
-            {/* Skill #3 */}
-            <div className="pt-4 pb-3 px-2">
-              <div className="pb-1">
-                <img src="/images/test/IconoSkillSet.png" alt="" />
-              </div>
-              <div className="text-xl font-semibold">Lenguajes</div>
-              <ul className="text-[#8491A0]">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>Python</li>
-              </ul>
-            </div>
-            {/* Skill #4 */}
-            <div className="pt-4 pb-3 px-2">
-              <div className="pb-1">
-                <img src="/images/test/IconoSkillSet.png" alt="" />
-              </div>
-              <div className="text-xl font-semibold">UX/UI</div>
-              <ul className="text-[#8491A0]">
-                <li>Figma</li>
-                <li>Tailwind</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-      </section>
-
+     
       {/* Companies Logos*/}
     {/*   <article className="pb-6">
         <div className="flex flex-row flex-wrap justify-center">
@@ -254,7 +255,7 @@ const home = () => {
             Visualización de Pokedex
             </div>
             <div className="text-lg  text-[#8491A0] bg-[#0b0b0b]  px-2">
-              Presentación de los contenidos de las figuras de la serie de televisión Pokemon. Datos obtenidos por API. Login, maquetación del conjunto, paginación y presentación de página información de un personaje.
+              Presentación de los contenidos de las figuras de la serie de televisión Pokemon. Datos obtenidos por API. Login, maquetación del conjunto, paginación y presentación de la página con información de un personaje.
               <div className="underline text-md text-[#a31a2e]">
                 <a
                   href="https://academloreactentregable5.netlify.app/pokedex"
@@ -283,9 +284,9 @@ const home = () => {
               Tarjetas información de usuarios
             </div>
             <div className="text-lg  text-[#8491A0] bg-[#0b0b0b]  px-2">
-              Aplicacion para manejo de tarjetas con información de usuarios. Es
-              posible crear, editar y borrar tarjetas con la información
-              almacenada en un servidor. Acceso por servicio web.
+              Aplicación para manejo de tarjetas con información de usuarios. Es
+              posible crear, editar y borrar tarjetas con los datos 
+              almacenados en un servidor remoto. Acceso por servicio web.
               <div className="underline text-md text-[#a31a2e]">
                 <a
                   href="https://academloreactentregable4.netlify.app/"
@@ -312,7 +313,7 @@ const home = () => {
               Rick and Morty
             </div>
             <div className="text-lg  text-[#8491A0] bg-[#0b0b0b]  px-2">
-            Pesonajes contenidos en los episodios de la serie de televisión Rick and Morty.Página con personajes que parecieron en un lugar específico. Datos obtenidos por API. 
+            Pesonajes contenidos en los episodios de la serie de televisión Rick and Morty. Página con individuos que parecieron en un lugar específico. Datos obtenidos por API. 
               <div className="underline text-md text-[#a31a2e]">
                 <a
                   href="https://academloreactentregable3.netlify.app/"
@@ -455,17 +456,17 @@ const home = () => {
               href="https://www.linkedin.com/in/andreslaraamaya/"
               target="_blank"
             >
-              <i class="bx bxl-linkedin-square text-[#0A66C2]"></i>
+              <i className="bx bxl-linkedin-square text-[#0A66C2]"></i>
             </a>
             <a className="pr-4" href="https://www.facebook.com/profile.php?id=100088672094738" target="_blank">
-              <i class="bx bxl-facebook-circle text-[#1B74E4]"></i>
+              <i className="bx bxl-facebook-circle text-[#1B74E4]"></i>
             </a>
             <a
               className="pr-4"
               href="https://github.com/aglagithub"
               target="_blank"
             >
-              <i class="bx bxl-github "></i>
+              <i className="bx bxl-github "></i>
             </a>
           </div>
         </section>
