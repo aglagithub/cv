@@ -11,15 +11,25 @@ const home = () => {
         <div className="text-3xl ">Andres Lara</div>
 
         <div className="flex justify-self-center text-[#8491a0]">
-          <a className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-white" href="#destrezas">
+          <a
+            className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-white"
+            href="#destrezas"
+          >
             Destrezas
           </a>
-          <a className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-white" href="#proyectos">
+          <a
+            className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-white"
+            href="#proyectos"
+          >
             Proyectos
           </a>
-          <a className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-white" href="#contacto">Contacto </a>
+          <a
+            className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-white"
+            href="#contacto"
+          >
+            Contacto{" "}
+          </a>
         </div>
-        
       </header>
 
       {/* Description */}
@@ -38,8 +48,8 @@ const home = () => {
         </div>
       </article>
 
- {/* Skillset */}
- <section className="">
+      {/* Skillset */}
+      <section className="">
         <article className="pb-4 flex flex-row flex-wrap gap-2">
           <div className="w-[320px] px-2">
             <div id="destrezas" className="text-4xl pb-4">
@@ -86,7 +96,7 @@ const home = () => {
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Javascript</li>
-                <li>Python</li>
+                {/* <li>Python</li>*/}
               </ul>
             </div>
             {/* Skill #4 */}
@@ -104,7 +114,6 @@ const home = () => {
         </article>
       </section>
 
-
       {/* Work experience */}
       <article className="pb-4">
         <div>EXPERIENCIA LABORAL</div>
@@ -119,7 +128,8 @@ const home = () => {
               Especialista
             </div>
             <div className="text-lg pb-2">
-              Mantenimiento del software de la mesa de servicios de TI y gestión de la plataforma web de la entidad.
+              Mantenimiento del software de la mesa de servicios de TI y gestión
+              de la plataforma web de la entidad.
             </div>
           </section>
 
@@ -131,9 +141,9 @@ const home = () => {
               </span>
             </div>
             <div className="text-lg  pb-2">
-              Gestión de proyectos de software para aplicaciones de
-              lógistica. Seguimiento de vehiculos y control de entregas. Gestión
-              del sitio web de la compañia.
+              Gestión de proyectos de software para aplicaciones de lógistica.
+              Seguimiento de vehiculos y control de entregas. Gestión del sitio
+              web de la compañia.
             </div>
           </section>
 
@@ -175,9 +185,9 @@ const home = () => {
           <img src="/images/test/FotoGroupOfPeople.png" alt="" />
         </div> */}
       </article>
-     
+
       {/* Companies Logos*/}
-    {/*   <article className="pb-6">
+      {/*   <article className="pb-6">
         <div className="flex flex-row flex-wrap justify-center">
           <div className="border-solid border-1 mt-2 ">
             <img src="/images/icfes.png" />
@@ -226,8 +236,8 @@ const home = () => {
               Frontend Tienda
             </div>
             <div className="text-lg  text-[#8491A0] bg-[#0b0b0b]  px-2">
-              FrontEnd Tienda. Listado de productos obtenidos por servicio web. Funcionalidad
-              para Carrito de compras.
+              FrontEnd Tienda. Listado de productos obtenidos por servicio web.
+              Funcionalidad para Carrito de compras.
               <div className="underline text-md text-[#a31a2e]">
                 <a
                   href="https://ecommerceacademloandreslara.netlify.app/"
@@ -252,10 +262,13 @@ const home = () => {
               </div>
             </div>
             <div className="text-xl font-semibold  px-2 pb-2">
-            Visualización de Pokedex
+              Visualización de Pokedex
             </div>
             <div className="text-lg  text-[#8491A0] bg-[#0b0b0b]  px-2">
-              Presentación de los contenidos de las figuras de la serie de televisión Pokemon. Datos obtenidos por API. Login, maquetación del conjunto, paginación y presentación de la página con información de un personaje.
+              Presentación de los contenidos de las figuras de la serie de
+              televisión Pokemon. Datos obtenidos por API. Login, maquetación
+              del conjunto, paginación y presentación de la página con
+              información de un personaje.
               <div className="underline text-md text-[#a31a2e]">
                 <a
                   href="https://academloreactentregable5.netlify.app/pokedex"
@@ -285,8 +298,8 @@ const home = () => {
             </div>
             <div className="text-lg  text-[#8491A0] bg-[#0b0b0b]  px-2">
               Aplicación para manejo de tarjetas con información de usuarios. Es
-              posible crear, editar y borrar tarjetas con los datos 
-              almacenados en un servidor remoto. Acceso por servicio web.
+              posible crear, editar y borrar tarjetas con los datos almacenados
+              en un servidor remoto. Acceso por servicio web.
               <div className="underline text-md text-[#a31a2e]">
                 <a
                   href="https://academloreactentregable4.netlify.app/"
@@ -313,7 +326,9 @@ const home = () => {
               Rick and Morty
             </div>
             <div className="text-lg  text-[#8491A0] bg-[#0b0b0b]  px-2">
-            Pesonajes contenidos en los episodios de la serie de televisión Rick and Morty. Página con individuos que parecieron en un lugar específico. Datos obtenidos por API. 
+              Pesonajes contenidos en los episodios de la serie de televisión
+              Rick and Morty. Página con individuos que parecieron en un lugar
+              específico. Datos obtenidos por API.
               <div className="underline text-md text-[#a31a2e]">
                 <a
                   href="https://academloreactentregable3.netlify.app/"
@@ -458,7 +473,11 @@ const home = () => {
             >
               <i className="bx bxl-linkedin-square text-[#0A66C2]"></i>
             </a>
-            <a className="pr-4" href="https://www.facebook.com/profile.php?id=100088672094738" target="_blank">
+            <a
+              className="pr-4"
+              href="https://www.facebook.com/profile.php?id=100088672094738"
+              target="_blank"
+            >
               <i className="bx bxl-facebook-circle text-[#1B74E4]"></i>
             </a>
             <a

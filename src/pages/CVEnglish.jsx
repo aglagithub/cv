@@ -11,13 +11,24 @@ const CVEnglish = () => {
         <div className="text-3xl ">Andres Lara</div>
 
         <div className="flex justify-self-center text-[#8491a0]">
-          <a className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-white" href="#destrezas">
+          <a
+            className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-white"
+            href="#destrezas"
+          >
             Abilities
           </a>
-          <a className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-white" href="#proyectos">
+          <a
+            className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-white"
+            href="#proyectos"
+          >
             Projects
           </a>
-          <a className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-white" href="#contacto">Contact </a>
+          <a
+            className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-white"
+            href="#contacto"
+          >
+            Contact{" "}
+          </a>
         </div>
       </header>
 
@@ -42,10 +53,12 @@ const CVEnglish = () => {
         <article className="pb-4 flex flex-row flex-wrap gap-2">
           <div className="w-[320px] px-2">
             <div id="destrezas" className="text-4xl pb-4">
-            Abilities
+              Abilities
             </div>
             <div className="text-lg  ">
-            With skills in different areas of design. I am the person to hire for a web design project. I am willing to undertake any challenge in this field.
+              With skills in different areas of design. I am the person to hire
+              for a web design project. I am willing to undertake any challenge
+              in this field.
             </div>
           </div>
 
@@ -84,7 +97,7 @@ const CVEnglish = () => {
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Javascript</li>
-                <li>Python</li>
+                {/* <li>Python</li>*/}
               </ul>
             </div>
             {/* Skill #4 */}
@@ -102,7 +115,6 @@ const CVEnglish = () => {
         </article>
       </section>
 
-
       {/* Work experience */}
       <article className="pb-4">
         <div>WORK EXPERIENCE</div>
@@ -116,7 +128,7 @@ const CVEnglish = () => {
               <span className="text-[#3CC74E]">ICFES</span> Specialist Engineer.
             </div>
             <div className="text-lg pb-2">
-            IT service desk software maintenance  and web platform management.
+              IT service desk software maintenance and web platform management.
             </div>
           </section>
 
@@ -172,7 +184,6 @@ const CVEnglish = () => {
       </div> */}
       </article>
 
-      
       {/* Companies Logos*/}
       {/*   <article className="pb-6">
       <div className="flex flex-row flex-wrap justify-center">
@@ -203,9 +214,7 @@ const CVEnglish = () => {
         <div className="w-[320px]">
           <div className="px-2">
             <div></div>
-            <div className="text-3xl pb-4">
-            Some projects I have done:
-            </div>
+            <div className="text-3xl pb-4">Some projects I have done:</div>
           </div>
           {/* Proyecto 1*/}
           <article className="pb-5">
@@ -220,10 +229,11 @@ const CVEnglish = () => {
               </div>
             </div>
             <div className="text-xl font-semibold  px-2 pb-2">
-            Store Frontend 
+              Store Frontend
             </div>
             <div className="text-lg  text-[#8491A0] bg-[#0b0b0b]  px-2">
-            Store Frontend . List of products obtained by web service. Shopping Cart Functionality.
+              Store Frontend . List of products obtained by web service.
+              Shopping Cart Functionality.
               <div className="underline text-md text-[#a31a2e]">
                 <a
                   href="https://ecommerceacademloandreslara.netlify.app/"
@@ -248,10 +258,12 @@ const CVEnglish = () => {
               </div>
             </div>
             <div className="text-xl font-semibold  px-2 pb-2">
-            Pokedex display
+              Pokedex display
             </div>
             <div className="text-lg  text-[#8491A0] bg-[#0b0b0b]  px-2">
-            Pokemon television series characters information presentation. Data obtained by API. Login, layout of the set, pagination and presentation of an individual character's information page.
+              Pokemon television series characters information presentation.
+              Data obtained by API. Login, layout of the set, pagination and
+              presentation of an individual character's information page.
               <div className="underline text-md text-[#a31a2e]">
                 <a
                   href="https://academloreactentregable5.netlify.app/pokedex"
@@ -277,11 +289,12 @@ const CVEnglish = () => {
               </div>
             </div>
             <div className="text-xl font-semibold  px-2 pb-2">
-            User information cards
+              User information cards
             </div>
             <div className="text-lg  text-[#8491A0] bg-[#0b0b0b]  px-2">
-           
-            Application for managing cards with user information. It is possible to create, edit and delete cards with the information stored on a server. Web service access.
+              Application for managing cards with user information. It is
+              possible to create, edit and delete cards with the information
+              stored on a server. Web service access.
               <div className="underline text-md text-[#a31a2e]">
                 <a
                   href="https://academloreactentregable4.netlify.app/"
@@ -308,7 +321,9 @@ const CVEnglish = () => {
               Rick and Morty
             </div>
             <div className="text-lg  text-[#8491A0] bg-[#0b0b0b]  px-2">
-            Characters contained in the episodes of the television series Rick and Morty. Page with characters that appeared in a specific place. Data obtained by API.
+              Characters contained in the episodes of the television series Rick
+              and Morty. Page with characters that appeared in a specific place.
+              Data obtained by API.
               <div className="underline text-md text-[#a31a2e]">
                 <a
                   href="https://academloreactentregable3.netlify.app/"
@@ -370,9 +385,10 @@ const CVEnglish = () => {
       <article className="pb-4 flex flex-row flex-wrap justify-center ">
         <div className="w-[320px]">
           <div className="text-lg text-[#5B6876] pb-2 px-2 mt-3">
-          Now that you know a lot about me, let me know if you are interested in working with me.
+            Now that you know a lot about me, let me know if you are interested
+            in working with me.
             <div className=" mt-2">
-            Telephone:&nbsp;
+              Telephone:&nbsp;
               <a className=" text-[#5221EB]" href="tel:+573173167289">
                 +57-3173167289
               </a>
@@ -461,7 +477,6 @@ const CVEnglish = () => {
             </a>
             <a
               className="pr-4"
-              
               href="https://github.com/aglagithub"
               target="_blank"
             >
