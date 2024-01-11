@@ -49,15 +49,15 @@ const home = () => {
       </article>
 
       {/* Skillset */}
-      <section className="">
-        <article className="pb-4 flex flex-row flex-wrap gap-2">
+      <section className="color-red">
+        <article className="pb-6 flex flex-row flex-wrap gap-2">
           <div className="w-[320px] px-2">
             <div id="destrezas" className="text-4xl pb-4">
               Destrezas
-            </div>
-            <div className="text-lg  ">
+            </div>g
+            <div className="text-lg text-left ">
               Con destrezas en diferentes areas del diseño. Soy la persona a
-              contratar para un proyecto de diseño web.Estoy dispuesto a
+              contratar para un proyecto de diseño web. Estoy dispuesto a
               emprender cualquier reto en este campo.
             </div>
           </div>
@@ -65,19 +65,19 @@ const home = () => {
           <div className="flex flex-row flex-wrap justify-center gap-2">
             {/* Skill #1 */}
             <div className="pt-4 pb-3 px-2">
-              <div className="pb-1">
+              <div className="pb-1 hover:animate-pulse">
                 <img src="/images/test/IconoSkillSet.png" alt="" />
               </div>
               <div className="text-xl font-semibold">Frameworks</div>
               <ul className="text-[#8491A0]">
                 <li>React</li>
                 <li>Redux</li>
-                <li>Next.js</li>
+                {/* <li>Next.js</li> */}
               </ul>
             </div>
             {/* Skill #2 */}
             <div className="pt-4 pb-3 px-2">
-              <div className="pb-1">
+              <div className="pb-1 hover:animate-pulse">
                 <img src="/images/test/IconoSkillSet.png" alt="" />
               </div>
               <div className="text-xl font-semibold">Source Control</div>
@@ -88,7 +88,7 @@ const home = () => {
             </div>
             {/* Skill #3 */}
             <div className="pt-4 pb-3 px-2">
-              <div className="pb-1">
+              <div className="pb-1 hover:animate-pulse">
                 <img src="/images/test/IconoSkillSet.png" alt="" />
               </div>
               <div className="text-xl font-semibold">Lenguajes</div>
@@ -96,18 +96,19 @@ const home = () => {
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Javascript</li>
+                <li>Typescript</li>
                 {/* <li>Python</li>*/}
               </ul>
             </div>
             {/* Skill #4 */}
             <div className="pt-4 pb-3 px-2">
-              <div className="pb-1">
+              <div className="pb-1 hover:animate-pulse">
                 <img src="/images/test/IconoSkillSet.png" alt="" />
               </div>
               <div className="text-xl font-semibold">UX/UI</div>
               <ul className="text-[#8491A0]">
-                <li>Figma</li>
                 <li>Tailwind</li>
+                <li>Figma</li>
               </ul>
             </div>
           </div>
@@ -162,16 +163,16 @@ const home = () => {
       </article>
 
       {/* Philosofia y valores */}
-      <article className="pb-8 flex flex-row flex-wrap justify-center">
-        <div className="bg-[#fff3E4] w-[320px] px-4 p-2 pb-4">
+      <article className="pb-8 flex flex-row flex-wrap justify-center ">
+        <div className="bg-[#fff3E4] w-[320px] px-4 p-2 pb-4 rounded">
           <div className="text-4xl pb-4 text-black">Filosofía y valores</div>
-          <div className="text-lg text-[#8491A0] ">
-            Creo que se debe estar comprometido con los proyectos encomendados.
+          <div className="text-lg text-[#3f3f36] ">
+            Creo que se debe estar comprometido con los proyectos encomendados,
             mejorando continuamente basandose en la autocrítica y el dialogo con
             los interesados. Realizo mi trabajo con creatividad, autocrítica y
             mejora continua.
           </div>
-          <div className="">
+          <div className="py-4">
             <a
               className="underline underline-offset-8 text-black"
               href="https://www.linkedin.com/in/andreslaraamaya/"
@@ -458,30 +459,30 @@ const home = () => {
             <div className="text-2xl">Andres Lara</div>
           </div>
 
-          <div>
+          <div className="flex flex-row space-x-5">
             <a
-              className="pr-4 "
+              className="hover:animate-bounce"
               href="https://twitter.com/andresLaraamaya"
               target="_blank"
             >
               <i className="bx bxl-twitter text-[#1DB9F0]"></i>
             </a>
             <a
-              className="pr-4"
+              className="hover:animate-bounce"
               href="https://www.linkedin.com/in/andreslaraamaya/"
               target="_blank"
             >
               <i className="bx bxl-linkedin-square text-[#0A66C2]"></i>
             </a>
             <a
-              className="pr-4"
+              className="hover:animate-bounce"
               href="https://www.facebook.com/profile.php?id=100088672094738"
               target="_blank"
             >
               <i className="bx bxl-facebook-circle text-[#1B74E4]"></i>
             </a>
             <a
-              className="pr-4"
+              className="hover:animate-bounce "
               href="https://github.com/aglagithub"
               target="_blank"
             >
@@ -490,19 +491,33 @@ const home = () => {
           </div>
         </section>
 
-        <section className="flex flex-row flex-wrap">
+        <section className="flex flex-col flex-wrap ">
           <div>
-            <div>
-              <a href="#home">Home</a>
-            </div>
-
-            <div>
-              <a href="#destrezas">Destrezas</a>
-            </div>
-            <div>
-              <a href="#proyectos">Proyectos</a>
-            </div>
+            <a
+              className="hover:underline hover:underline-offset-4 hover:text-white hover:animate-pulse"
+              href="#home"
+            >
+              Home
+            </a>
           </div>
+
+          <div>
+            <a
+              className="hover:underline hover:underline-offset-4 hover:text-white hover:animate-pulse"
+              href="#destrezas"
+            >
+              Destrezas
+            </a>
+          </div>
+          <div>
+            <a
+              className="hover:underline hover:underline-offset-4 hover:text-white hover:animate-pulse"
+              href="#proyectos"
+            >
+              Proyectos
+            </a>
+          </div>
+
           {/* <div>
             <div>
               <a href="">Store</a>
@@ -516,7 +531,7 @@ const home = () => {
           </div> */}
         </section>
       </footer>
-      <div className="mx-auto pt-3">&copy;2023</div>
+      <div className="mx-auto pt-3">&copy;2024</div>
     </main>
   );
 };
