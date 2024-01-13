@@ -1,80 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 
 const home = () => {
-  const [languaje, setLanguaje] = useState("Español");
-  const [colorScheme, setcolorScheme] = useState("dark");
-  //setLanguaje = () => {};
-  const languajeChange = () => {
-    console.log("Languaje Change");
-    if (languaje === "Español") {
-      setLanguaje("English");
-    } else {
-      setLanguaje("Español");
-    }
-    console.log(languaje);
-  };
-  const visualModeChange = () => {
-    console.log("Moon clicked");
-    if (colorScheme === "dark") {
-      setcolorScheme("light");
-    } else {
-      setcolorScheme("dark");
-    }
-    console.log(colorScheme);
-  };
-
   return (
     <main
       id="home"
-      className="bg-[#dddddd] text-black min-h-screen px-4 pb-6 max-w-[1024px] flex flex-col flex-wrap mx-auto align-middle"
+      className="bg-black text-white min-h-screen px-4 pb-6 max-w-[1024px] flex flex-col flex-wrap mx-auto align-middle"
     >
       {/* Header */}
       <header className="pb-4 pt-4 flex flex-row flex-wrap justify-between	">
         <div className="text-3xl ">Andres Lara</div>
 
-        {/* Menu */}
-
-        <div className=" grid grid-rows-2 grid-cols-4 align-center text-[#0b141e]">
-          <button>
-            <i
-              onClick={visualModeChange}
-              className={`bx  ${
-                colorScheme === "dark" ? "bxs-moon" : "bxs-sun"
-              }  justify-self-center pt-1 pr-1 text-black`}
-            ></i>
-          </button>
-          <div
-            onClick={languajeChange}
-            className="  hover:underline hover:underline-offset-4  text-black rounded "
-          >
-            {languaje}
-          </div>
+        <div className="flex justify-self-center text-[#8491a0]">
           <a
-            href="..\docs\CV Andres Gilberto Lara Amaya. Canvas.pdf"
-            download="CV Andres Gilberto Lara Amaya. cc 7934bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded6683.pdf"
-            target="_blank"
-            rel="noreferrer"
-            className="pr-2  hover:underline hover:underline-offset-4 hover:text-black"
-          >
-            CV pdf
-          </a>
-          <a className="pr-2  hover:underline hover:underline-offset-4 hover:text-black">
-            CV ATF
-          </a>
-          <a
-            className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-black"
+            className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-white"
             href="#destrezas"
           >
             Destrezas
           </a>
           <a
-            className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-black"
+            className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-white"
             href="#proyectos"
           >
             Proyectos
           </a>
           <a
-            className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-black"
+            className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-white"
             href="#contacto"
           >
             Contacto{" "}
@@ -89,7 +39,7 @@ const home = () => {
         </div>
         <div className="text-4xl leading-8 w-[320px]">
           Mi nombre es Andres Lara. desarrollador Full Stack&nbsp;
-          <span className="text-[#4b3abc]">ubicado en Colombia.</span>
+          <span className="text-[#8491a0]">ubicado en Colombia.</span>
           <br></br> <br></br>
           <div className="text-3xl w-[320px] ">
             Soy ingeniero comprometido con su trabajo. Si tiene un proyecto de
@@ -112,14 +62,14 @@ const home = () => {
             </div>
           </div>
 
-          <div className="flex flex-row flex-wrap self-center gap-2">
+          <div className="flex flex-row flex-wrap justify-center gap-2">
             {/* Skill #1 */}
             <div className="pt-4 pb-3 px-2">
               <div className="pb-1 hover:animate-pulse">
                 <img src="/images/test/IconoSkillSet.png" alt="" />
               </div>
               <div className="text-xl font-semibold">Frameworks</div>
-              <ul className="text-[#4b3abc]">
+              <ul className="text-[#8491A0]">
                 <li>React</li>
                 <li>Redux</li>
                 {/* <li>Next.js</li> */}
@@ -131,7 +81,7 @@ const home = () => {
                 <img src="/images/test/IconoSkillSet.png" alt="" />
               </div>
               <div className="text-xl font-semibold">Source Control</div>
-              <ul className="text-[#4b3abc]">
+              <ul className="text-[#8491A0]">
                 <li>Git/Github</li>
                 <li>SCRUM / Agil</li>
               </ul>
@@ -142,7 +92,7 @@ const home = () => {
                 <img src="/images/test/IconoSkillSet.png" alt="" />
               </div>
               <div className="text-xl font-semibold">Lenguajes</div>
-              <ul className="text-[#4b3abc]">
+              <ul className="text-[#8491A0]">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Javascript</li>
@@ -156,7 +106,7 @@ const home = () => {
                 <img src="/images/test/IconoSkillSet.png" alt="" />
               </div>
               <div className="text-xl font-semibold">UX/UI</div>
-              <ul className="text-[#4b3abc]">
+              <ul className="text-[#8491A0]">
                 <li>Tailwind</li>
                 <li>Figma</li>
               </ul>
@@ -172,7 +122,7 @@ const home = () => {
         {/* Work items */}
         <div className="flex flex-row flex-wrap justify-around self-center">
           <section className="pb-4 w-[280px] pr-2">
-            <div className="text-[#4b3abc] text-8xl">01</div>
+            <div className="text-[#8491a0] text-8xl">01</div>
 
             <div className="text-2xl">
               <span className="text-[#3CC74E]">ICFES</span>, Ingeniero
@@ -185,7 +135,7 @@ const home = () => {
           </section>
 
           <section className="pb-4 w-[280px] pr-2">
-            <div className="text-[#4b3abc] text-8xl">02</div>
+            <div className="text-[#8491a0] text-8xl">02</div>
             <div className="text-2xl">
               <span className="text-[#609bff]">
                 Vision Logísitica Internacional
@@ -199,7 +149,7 @@ const home = () => {
           </section>
 
           <section className="pb-4 w-[280px] pr-2">
-            <div className="text-[#4b3abc] text-8xl">03</div>
+            <div className="text-[#8491a0] text-8xl">03</div>
             <div className="text-2xl">
               <span className="text-[#e95d90]">Profesional Independiente</span>,
               Ingeniero Desarrollador
@@ -262,9 +212,9 @@ const home = () => {
 
       <section
         id="proyectos"
-        className="flex flex-row flex-wrap self-center mb-4 bg-[#dddddd]"
+        className="flex flex-row flex-wrap self-center mb-4"
       >
-        <div className="w-[320px] bg-[#dddddd]">
+        <div className="w-[320px]">
           <div className="px-2">
             <div></div>
             <div className="text-3xl pb-4">
@@ -272,7 +222,7 @@ const home = () => {
             </div>
           </div>
           {/* Proyecto 1*/}
-          <article className="pb-5 bg-[#dddddd]">
+          <article className="pb-5">
             <div>
               <div className="underline text-md text-[#a31a2e]">
                 <a
@@ -286,10 +236,10 @@ const home = () => {
             <div className="text-xl font-semibold  px-2 pb-2">
               Frontend Tienda
             </div>
-            <div className="text-lg  text-[#222222] bg-[#dddddd]  px-2">
+            <div className="text-lg  text-[#8491A0] bg-[#0b0b0b]  px-2">
               FrontEnd Tienda. Listado de productos obtenidos por servicio web.
               Funcionalidad para Carrito de compras.
-              <div className="underline text-md text-[#a31a2e] pb-3">
+              <div className="underline text-md text-[#a31a2e]">
                 <a
                   href="https://ecommerceacademloandreslara.netlify.app/"
                   target="_blank"
@@ -301,8 +251,8 @@ const home = () => {
           </article>
 
           {/* Proyecto 2*/}
-          <article className="pb-5 pr-2 ">
-            <div className="">
+          <article className="pb-5 pr-2">
+            <div>
               <div className="underline text-md text-[#a31a2e]">
                 <a
                   href="https://academloreactentregable5.netlify.app/pokedex"
@@ -315,7 +265,7 @@ const home = () => {
             <div className="text-xl font-semibold  px-2 pb-2">
               Visualización de Pokedex
             </div>
-            <div className="text-lg   text-[#222222] bg-[#dddddd] px-2">
+            <div className="text-lg  text-[#8491A0] bg-[#0b0b0b]  px-2">
               Presentación de los contenidos de las figuras de la serie de
               televisión Pokemon. Datos obtenidos por API. Login, maquetación
               del conjunto, paginación y presentación de la página con
@@ -347,11 +297,11 @@ const home = () => {
             <div className="text-xl font-semibold  px-2 pb-2">
               Tarjetas información de usuarios
             </div>
-            <div className="text-lg  text-[#222222] bg-[#dddddd] px-2">
+            <div className="text-lg  text-[#8491A0] bg-[#0b0b0b]  px-2">
               Aplicación para manejo de tarjetas con información de usuarios. Es
               posible crear, editar y borrar tarjetas con los datos almacenados
               en un servidor remoto. Acceso por servicio web.
-              <div className="underline text-md text-[#a31a2e] pb-3">
+              <div className="underline text-md text-[#a31a2e]">
                 <a
                   href="https://academloreactentregable4.netlify.app/"
                   target="_blank"
@@ -376,7 +326,7 @@ const home = () => {
             <div className="text-xl font-semibold  px-2 pb-2">
               Rick and Morty
             </div>
-            <div className="text-lg  text-[#222222] bg-[#dddddd]  px-2">
+            <div className="text-lg  text-[#8491A0] bg-[#0b0b0b]  px-2">
               Pesonajes contenidos en los episodios de la serie de televisión
               Rick and Morty. Página con individuos que parecieron en un lugar
               específico. Datos obtenidos por API.
@@ -467,7 +417,7 @@ const home = () => {
                 Nombre
               </label>
               <input
-                className="block bg-[#eeeeee] "
+                className="block bg-[#25292d] "
                 type="text"
                 name="name"
                 id="name"
@@ -478,7 +428,7 @@ const home = () => {
                 Email
               </label>
               <input
-                className="block bg-[#eeeeee]"
+                className="block bg-[#25292d]"
                 type="email"
                 name="email"
                 id="email"
@@ -489,15 +439,13 @@ const home = () => {
                 Mensaje
               </label>
               <textarea
-                className="block bg-[#eeeeee]"
+                className="block bg-[#25292d]"
                 name="Message"
                 id="message"
               ></textarea>
             </div>
             <div className="flex">
-              <button className="px-3 py-2 bg-[#5221EB] mx-auto text-[#eeeeee]">
-                Enviar
-              </button>
+              <button className="px-3 py-2 bg-[#5221EB] mx-auto">Enviar</button>
             </div>
           </form>
         </div>
@@ -505,7 +453,7 @@ const home = () => {
       </article>
 
       {/* footer */}
-      <footer className="pb-5 flex flex-row flex-wrap items-center justify-center bg-[#eeeeee] pl-3 ">
+      <footer className="pb-5 flex flex-row flex-wrap items-center justify-center bg-[#25292d] pl-3 ">
         <section className="w-[320px] ">
           <div className="pb-4 pt-4">
             <div className="text-2xl">Andres Lara</div>
@@ -546,7 +494,7 @@ const home = () => {
         <section className="flex flex-col flex-wrap ">
           <div>
             <a
-              className="hover:underline hover:underline-offset-4 hover:text-[#222222] hover:animate-pulse"
+              className="hover:underline hover:underline-offset-4 hover:text-white hover:animate-pulse"
               href="#home"
             >
               Home
@@ -555,7 +503,7 @@ const home = () => {
 
           <div>
             <a
-              className="hover:underline hover:underline-offset-4 hover:text-[#222222] hover:animate-pulse"
+              className="hover:underline hover:underline-offset-4 hover:text-white hover:animate-pulse"
               href="#destrezas"
             >
               Destrezas
@@ -563,7 +511,7 @@ const home = () => {
           </div>
           <div>
             <a
-              className="hover:underline hover:underline-offset-4 hover:[#222222] hover:animate-pulse"
+              className="hover:underline hover:underline-offset-4 hover:text-white hover:animate-pulse"
               href="#proyectos"
             >
               Proyectos
