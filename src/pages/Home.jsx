@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
 const home = () => {
-  const [languaje, setLanguaje] = useState("Español");
-  const [colorScheme, setcolorScheme] = useState("dark");
-  //setLanguaje = () => {};
+  const [languaje, setLanguaje] = useState("English");
+  const [colorScheme, setcolorScheme] = useState("light");
+
   const languajeChange = () => {
     console.log("Languaje Change");
     if (languaje === "Español") {
@@ -26,59 +26,91 @@ const home = () => {
   return (
     <main
       id="home"
-      className="bg-[#dddddd] text-black min-h-screen px-4 pb-6 max-w-[1024px] flex flex-col flex-wrap mx-auto align-middle"
+      className={`${
+        colorScheme === "dark"
+          ? "bg-[#dddddd] text-black"
+          : "bg-black text-white"
+      } min-h-screen px-4 pb-6 max-w-[1024px] flex flex-col flex-wrap mx-auto align-middle`}
     >
       {/* Header */}
       <header className="pb-4 pt-4 flex flex-row flex-wrap justify-between	">
-        <div className="text-3xl ">Andres Lara</div>
+        <div className="text-3xl self-center ">Andres Lara</div>
 
         {/* Menu */}
-
-        <div className=" grid grid-rows-2 grid-cols-4 align-center text-[#0b141e]">
-          <button>
-            <i
-              onClick={visualModeChange}
-              className={`bx  ${
-                colorScheme === "dark" ? "bxs-moon" : "bxs-sun"
-              }  justify-self-center pt-1 pr-1 text-black`}
-            ></i>
-          </button>
+        <div>
           <div
-            onClick={languajeChange}
-            className="  hover:underline hover:underline-offset-4  text-black rounded "
+            className={` flex flex-row justify-evenly items-stretch
+          ${
+            colorScheme === "dark"
+              ? "bg-[#dddddd] text-black"
+              : "bg-black text-white"
+          }`}
           >
-            {languaje}
+            <button>
+              <i
+                onClick={visualModeChange}
+                className={` row-span-2 bx  ${
+                  colorScheme === "dark" ? "bxs-moon" : "bxs-sun"
+                }  justify-self-center pt-1 pr-1 `}
+              ></i>
+            </button>
+            <div
+              onClick={languajeChange}
+              className="  hover:underline hover:underline-offset-4 rounded "
+            >
+              {languaje === "English" ? "A Español" : "To English"}
+            </div>
+            <a
+              href="https://github.com/aglagithub/cv/blob/main/public/docs/CV%20Andres%20Gilberto%20Lara%20Amaya.%20SP.pdf"
+              download="Andres%20Gilberto%20Lara%20Amaya.%20SP.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className={` pr-2  hover:underline hover:underline-offset-4 
+            ${
+              colorScheme === "dark" ? "hover:text-black" : "hover:text-white"
+            }`}
+            >
+              CV pdf
+            </a>
+            <a
+              href="https://github.com/aglagithub/cv/blob/main/public/docs/CV%20ATS%20Andres%20Gilberto%20Lara%20Amaya.%20SP.pdf"
+              download="Andres%20Gilberto%20Lara%20Amaya.%20SP.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className={` pr-2  hover:underline hover:underline-offset-4
+            ${
+              colorScheme === "dark" ? "hover:text-black" : "hover:text-white"
+            }`}
+            >
+              CV ATS
+            </a>
           </div>
-          <a
-            href="..\docs\CV Andres Gilberto Lara Amaya. Canvas.pdf"
-            download="CV Andres Gilberto Lara Amaya. cc 7934bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded6683.pdf"
-            target="_blank"
-            rel="noreferrer"
-            className="pr-2  hover:underline hover:underline-offset-4 hover:text-black"
-          >
-            CV pdf
-          </a>
-          <a className="pr-2  hover:underline hover:underline-offset-4 hover:text-black">
-            CV ATF
-          </a>
-          <a
-            className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-black"
-            href="#destrezas"
-          >
-            Destrezas
-          </a>
-          <a
-            className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-black"
-            href="#proyectos"
-          >
-            Proyectos
-          </a>
-          <a
-            className="pr-2 text-xl hover:underline hover:underline-offset-4 hover:text-black"
-            href="#contacto"
-          >
-            Contacto{" "}
-          </a>
+          <div className="flex justify-between flex-wrap items-stretch font-semibold">
+            <a
+              className={` pr-2 text-xl hover:underline hover:underline-offset-4 ${
+                colorScheme === "dark" ? "hover:text-black" : "hover:text-white"
+              }`}
+              href="#destrezas"
+            >
+              {languaje === "English" ? "Abilities" : "Destrezas"}
+            </a>
+            <a
+              className={` pr-2 text-xl hover:underline hover:underline-offset-4 ${
+                colorScheme === "dark" ? "hover:text-black" : "hover:text-white"
+              }`}
+              href="#proyectos"
+            >
+              {languaje === "English" ? "Projects" : " Proyectos"}
+            </a>
+            <a
+              className={` pr-2 text-xl hover:underline hover:underline-offset-4 ${
+                colorScheme === "dark" ? "hover:text-black" : "hover:text-white"
+              }`}
+              href="#contacto"
+            >
+              {languaje === "English" ? "Contact" : "Contacto"}
+            </a>
+          </div>
         </div>
       </header>
 
@@ -88,12 +120,20 @@ const home = () => {
           <img src="/images/FotoAGLA1.jpg"></img>
         </div>
         <div className="text-4xl leading-8 w-[320px]">
-          Mi nombre es Andres Lara. desarrollador Full Stack&nbsp;
-          <span className="text-[#4b3abc]">ubicado en Colombia.</span>
+          {languaje === "English"
+            ? "My name is Andrés Lara. Full Stack developer"
+            : "Mi nombre es Andres Lara. desarrollador Full Stack"}
+          &nbsp;
+          <span className="text-[#4b3abc]">
+            {languaje === "English"
+              ? "located in Colombia."
+              : "ubicado en Colombia."}
+          </span>
           <br></br> <br></br>
           <div className="text-3xl w-[320px] ">
-            Soy ingeniero comprometido con su trabajo. Si tiene un proyecto de
-            desarrollo de aplicaciones web, soy la persona que busca.
+            {languaje === "English"
+              ? "I am an engineer committed to his work. If you have a web application development project, I am the person for you."
+              : "Soy ingeniero comprometido con su trabajo. Si tiene un proyecto de desarrollo de aplicaciones web, soy la persona que busca."}
           </div>
         </div>
       </article>
@@ -103,12 +143,12 @@ const home = () => {
         <article className="pb-6 flex flex-row flex-wrap gap-2">
           <div className="w-[320px] px-2">
             <div id="destrezas" className="text-4xl pb-4">
-              Destrezas
+              {languaje === "English" ? "Abilities" : "Destrezas"}
             </div>
             <div className="text-lg text-left ">
-              Con destrezas en diferentes areas del diseño. Soy la persona a
-              contratar para un proyecto de diseño web. Estoy dispuesto a
-              emprender cualquier reto en este campo.
+              {languaje === "English"
+                ? "With skills in different areas of design. I am the person to hire for a web design project. I am willing to undertake any challenge in this field."
+                : "Con destrezas en diferentes areas del diseño. Soy la persona a              contratar para un proyecto de diseño web. Estoy dispuesto a emprender cualquier reto en este campo."}
             </div>
           </div>
 
@@ -167,20 +207,29 @@ const home = () => {
 
       {/* Work experience */}
       <article className="pb-4">
-        <div>EXPERIENCIA LABORAL</div>
-        <div className="text-4xl pb-4">Proyectos en los que he trabajado</div>
+        <div>
+          {languaje === "English" ? "WORK EXPERIENCE" : "EXPERIENCIA LABORAL"}
+        </div>
+        <div className="text-4xl pb-4">
+          {languaje === "English"
+            ? "Projects I have worked on"
+            : "Proyectos en los que he trabajado"}
+        </div>
         {/* Work items */}
         <div className="flex flex-row flex-wrap justify-around self-center">
           <section className="pb-4 w-[280px] pr-2">
             <div className="text-[#4b3abc] text-8xl">01</div>
 
             <div className="text-2xl">
-              <span className="text-[#3CC74E]">ICFES</span>, Ingeniero
-              Especialista
+              <span className="text-[#3CC74E]">ICFES</span>.
+              {languaje === "English"
+                ? "Specialist Engineer."
+                : "Ingeniero Especialista"}
             </div>
             <div className="text-lg pb-2">
-              Mantenimiento del software de la mesa de servicios de TI y gestión
-              de la plataforma web de la entidad.
+              {languaje === "English"
+                ? "IT service desk software maintenance and web platform management."
+                : "Mantenimiento del software de la mesa de servicios de TI y gestión de la plataforma web de la entidad."}
             </div>
           </section>
 
@@ -192,21 +241,26 @@ const home = () => {
               </span>
             </div>
             <div className="text-lg  pb-2">
-              Gestión de proyectos de software para aplicaciones de lógistica.
-              Seguimiento de vehiculos y control de entregas. Gestión del sitio
-              web de la compañia.
+              {languaje === "English"
+                ? "Management of software projects for logistics applications. Vehicle tracking and delivery control. Management of the company's website."
+                : "Gestión de proyectos de software para aplicaciones de lógistica.              Seguimiento de vehiculos y control de entregas. Gestión del sitio web de la compañia."}
             </div>
           </section>
 
           <section className="pb-4 w-[280px] pr-2">
             <div className="text-[#4b3abc] text-8xl">03</div>
             <div className="text-2xl">
-              <span className="text-[#e95d90]">Profesional Independiente</span>,
-              Ingeniero Desarrollador
+              <span className="text-[#e95d90]">
+                {languaje === "English"
+                  ? "Independent Professional"
+                  : "Profesional Independiente"}
+              </span>
+              ,
             </div>
             <div className="text-lg  pb-2">
-              Empecé mi carrera como desarrollador de aplicaciones de softaware
-              aplicadas a electrónica.
+              {languaje === "English"
+                ? "I started my career as a developer of software applications applied to electronics."
+                : "Empecé mi carrera como desarrollador de aplicaciones de softaware              aplicadas a electrónica."}
             </div>
           </section>
         </div>
@@ -215,12 +269,15 @@ const home = () => {
       {/* Philosofia y valores */}
       <article className="pb-8 flex flex-row flex-wrap justify-center ">
         <div className="bg-[#fff3E4] w-[320px] px-4 p-2 pb-4 rounded">
-          <div className="text-4xl pb-4 text-black">Filosofía y valores</div>
+          <div className="text-4xl pb-4 text-black">
+            {languaje === "English"
+              ? "Philosophy and values"
+              : "Filosofía y valores"}
+          </div>
           <div className="text-lg text-[#3f3f36] ">
-            Creo que se debe estar comprometido con los proyectos encomendados,
-            mejorando continuamente basandose en la autocrítica y el dialogo con
-            los interesados. Realizo mi trabajo con creatividad, autocrítica y
-            mejora continua.
+            {languaje === "English"
+              ? "I believe that you must be committed to the projects entrusted. Continuously improving based on self-criticism and dialogue with stakeholders. I carry out my work with creativity, self-criticism and continuous improvement."
+              : " Creo que se debe estar comprometido con los proyectos encomendados,            mejorando continuamente basandose en la autocrítica y el dialogo los interesados. Realizo mi trabajo con creatividad, autocrítica y mejora continua."}
           </div>
           <div className="py-4">
             <a
@@ -228,7 +285,9 @@ const home = () => {
               href="https://www.linkedin.com/in/andreslaraamaya/"
               target="_blank"
             >
-              Observe mi Linkedin
+              {languaje === "English"
+                ? "Check my Linkedin page"
+                : "Observe mi Linkedin"}
             </a>
           </div>
         </div>
@@ -264,7 +323,13 @@ const home = () => {
         id="proyectos"
         className="flex flex-row flex-wrap self-center mb-4 bg-[#dddddd]"
       >
-        <div className="w-[320px] bg-[#dddddd]">
+        <div
+          className={` w-[320px] ${
+            colorScheme === "dark"
+              ? "bg-[#dddddd] text-black"
+              : "bg-black text-white"
+          }`}
+        >
           <div className="px-2">
             <div></div>
             <div className="text-3xl pb-4">
@@ -272,7 +337,7 @@ const home = () => {
             </div>
           </div>
           {/* Proyecto 1*/}
-          <article className="pb-5 bg-[#dddddd]">
+          <article>
             <div>
               <div className="underline text-md text-[#a31a2e]">
                 <a
@@ -286,7 +351,13 @@ const home = () => {
             <div className="text-xl font-semibold  px-2 pb-2">
               Frontend Tienda
             </div>
-            <div className="text-lg  text-[#222222] bg-[#dddddd]  px-2">
+            <div
+              className={`text-lg  ${
+                colorScheme === "dark"
+                  ? "bg-[#dddddd] text-black"
+                  : "bg-black text-white"
+              }  px-2 `}
+            >
               FrontEnd Tienda. Listado de productos obtenidos por servicio web.
               Funcionalidad para Carrito de compras.
               <div className="underline text-md text-[#a31a2e] pb-3">
@@ -315,7 +386,13 @@ const home = () => {
             <div className="text-xl font-semibold  px-2 pb-2">
               Visualización de Pokedex
             </div>
-            <div className="text-lg   text-[#222222] bg-[#dddddd] px-2">
+            <div
+              className={`text-lg  ${
+                colorScheme === "dark"
+                  ? "bg-[#dddddd] text-black"
+                  : "bg-black text-white"
+              }  px-2 `}
+            >
               Presentación de los contenidos de las figuras de la serie de
               televisión Pokemon. Datos obtenidos por API. Login, maquetación
               del conjunto, paginación y presentación de la página con
@@ -331,7 +408,13 @@ const home = () => {
             </div>
           </article>
         </div>
-        <div className="w-[320px]">
+        <div
+          className={` w-[320px] ${
+            colorScheme === "dark"
+              ? "bg-[#dddddd] text-black"
+              : "bg-black text-white"
+          }`}
+        >
           {/* Proyecto 3*/}
           <article className="pb-5">
             <div>
@@ -344,10 +427,22 @@ const home = () => {
                 </a>
               </div>
             </div>
-            <div className="text-xl font-semibold  px-2 pb-2">
+            <div
+              className={` text-xl font-semibold  px-2 pb-2 ${
+                colorScheme === "dark"
+                  ? "bg-[#dddddd] text-black"
+                  : "bg-black text-white"
+              }`}
+            >
               Tarjetas información de usuarios
             </div>
-            <div className="text-lg  text-[#222222] bg-[#dddddd] px-2">
+            <div
+              className={`text-lg  ${
+                colorScheme === "dark"
+                  ? "bg-[#dddddd] text-black"
+                  : "bg-black text-white"
+              }  px-2 `}
+            >
               Aplicación para manejo de tarjetas con información de usuarios. Es
               posible crear, editar y borrar tarjetas con los datos almacenados
               en un servidor remoto. Acceso por servicio web.
@@ -373,10 +468,22 @@ const home = () => {
                 </a>
               </div>
             </div>
-            <div className="text-xl font-semibold  px-2 pb-2">
+            <div
+              className={` text-xl font-semibold  px-2 pb-2 ${
+                colorScheme === "dark"
+                  ? "bg-[#dddddd] text-black"
+                  : "bg-black text-white"
+              }`}
+            >
               Rick and Morty
             </div>
-            <div className="text-lg  text-[#222222] bg-[#dddddd]  px-2">
+            <div
+              className={`text-lg  ${
+                colorScheme === "dark"
+                  ? "bg-[#dddddd] text-black"
+                  : "bg-black text-white"
+              }  px-2 `}
+            >
               Pesonajes contenidos en los episodios de la serie de televisión
               Rick and Morty. Página con individuos que parecieron en un lugar
               específico. Datos obtenidos por API.
@@ -505,10 +612,12 @@ const home = () => {
       </article>
 
       {/* footer */}
-      <footer className="pb-5 flex flex-row flex-wrap items-center justify-center bg-[#eeeeee] pl-3 ">
+      <footer
+        className={` pb-5 flex flex-row flex-wrap items-center justify-center bg-[#eeeeee] pl-3 `}
+      >
         <section className="w-[320px] ">
           <div className="pb-4 pt-4">
-            <div className="text-2xl">Andres Lara</div>
+            <div className="text-2xl text-black">Andres Lara</div>
           </div>
 
           <div className="flex flex-row space-x-5">
@@ -538,12 +647,12 @@ const home = () => {
               href="https://github.com/aglagithub"
               target="_blank"
             >
-              <i className="bx bxl-github "></i>
+              <i className="bx bxl-github text-black "></i>
             </a>
           </div>
         </section>
 
-        <section className="flex flex-col flex-wrap ">
+        <section className="flex flex-col flex-wrap text-black ">
           <div>
             <a
               className="hover:underline hover:underline-offset-4 hover:text-[#222222] hover:animate-pulse"
