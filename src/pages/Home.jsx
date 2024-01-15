@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const home = () => {
-  const [languaje, setLanguaje] = useState("English");
+  const [languaje, setLanguaje] = useState("Español");
   const [colorScheme, setcolorScheme] = useState("light");
 
   const languajeChange = () => {
@@ -321,7 +321,11 @@ const home = () => {
 
       <section
         id="proyectos"
-        className="flex flex-row flex-wrap self-center mb-4 bg-[#dddddd]"
+        className={`flex flex-row flex-wrap self-center mb-4 ${
+          colorScheme === "dark"
+            ? "bg-[#dddddd] text-black"
+            : "bg-black text-white"
+        }`}
       >
         <div
           className={` w-[320px] ${
@@ -331,9 +335,10 @@ const home = () => {
           }`}
         >
           <div className="px-2">
-            <div></div>
             <div className="text-3xl pb-4">
-              Algunos proyectos que he realizado:
+              {languaje === "English"
+                ? "Some projects I have done:"
+                : "Algunos proyectos que he realizado:"}
             </div>
           </div>
           {/* Proyecto 1*/}
@@ -348,8 +353,9 @@ const home = () => {
                 </a>
               </div>
             </div>
+
             <div className="text-xl font-semibold  px-2 pb-2">
-              Frontend Tienda
+              {languaje === "English" ? "Store Frontend" : "Frontend Tienda"}
             </div>
             <div
               className={`text-lg  ${
@@ -358,14 +364,16 @@ const home = () => {
                   : "bg-black text-white"
               }  px-2 `}
             >
-              FrontEnd Tienda. Listado de productos obtenidos por servicio web.
-              Funcionalidad para Carrito de compras.
+              {languaje === "English"
+                ? "Store Frontend. List of products obtained by web service. Shopping Cart Functionality."
+                : " FrontEnd Tienda. Listado de productos obtenido  por servicio web. Funcionalidad para Carrito de compras."}
+
               <div className="underline text-md text-[#a31a2e] pb-3">
                 <a
                   href="https://ecommerceacademloandreslara.netlify.app/"
                   target="_blank"
                 >
-                  Enlace
+                  {languaje === "English" ? "Link" : "Enlace"}
                 </a>
               </div>
             </div>
@@ -384,7 +392,9 @@ const home = () => {
               </div>
             </div>
             <div className="text-xl font-semibold  px-2 pb-2">
-              Visualización de Pokedex
+              {languaje === "English"
+                ? "Pokedex display"
+                : "Visualización de Pokedex"}
             </div>
             <div
               className={`text-lg  ${
@@ -393,16 +403,16 @@ const home = () => {
                   : "bg-black text-white"
               }  px-2 `}
             >
-              Presentación de los contenidos de las figuras de la serie de
-              televisión Pokemon. Datos obtenidos por API. Login, maquetación
-              del conjunto, paginación y presentación de la página con
-              información de un personaje.
+              {languaje === "English"
+                ? "Pokemon television series characters information presentation. Data obtained by API. Login, layout of the set, pagination and presentation of an individual character's information page."
+                : "Presentación de los contenidos de las figuras de la serie de televisión Pokemon. Datos obtenidos por API. Login, maquetación del conjunto, paginación y presentación de la página con información de un personaje."}
+
               <div className="underline text-md text-[#a31a2e]">
                 <a
                   href="https://academloreactentregable5.netlify.app/pokedex"
                   target="_blank"
                 >
-                  Enlace
+                  {languaje === "English" ? "Link" : "Enlace"}
                 </a>
               </div>
             </div>
@@ -434,7 +444,9 @@ const home = () => {
                   : "bg-black text-white"
               }`}
             >
-              Tarjetas información de usuarios
+              {languaje === "English"
+                ? "User information cards"
+                : "Tarjetas información de usuarios"}
             </div>
             <div
               className={`text-lg  ${
@@ -443,15 +455,15 @@ const home = () => {
                   : "bg-black text-white"
               }  px-2 `}
             >
-              Aplicación para manejo de tarjetas con información de usuarios. Es
-              posible crear, editar y borrar tarjetas con los datos almacenados
-              en un servidor remoto. Acceso por servicio web.
+              {languaje === "English"
+                ? "Application for managing cards with user information. It is possible to create, edit and delete cards with the information stored on a server. Web service access."
+                : "Aplicación para manejo de tarjetas con información de usuarios. Es posible crear, editar y borrar tarjetas con los datos almacenados en un servidor remoto. Acceso por servicio web."}
               <div className="underline text-md text-[#a31a2e] pb-3">
                 <a
                   href="https://academloreactentregable4.netlify.app/"
                   target="_blank"
                 >
-                  Enlace
+                  {languaje === "English" ? "Link" : "Enlace"}
                 </a>
               </div>
             </div>
@@ -484,15 +496,16 @@ const home = () => {
                   : "bg-black text-white"
               }  px-2 `}
             >
-              Pesonajes contenidos en los episodios de la serie de televisión
-              Rick and Morty. Página con individuos que parecieron en un lugar
-              específico. Datos obtenidos por API.
+              {languaje === "English"
+                ? "Characters contained in the episodes of the television series Rick and Morty. Page with characters that appeared in a specific place. Data obtained by API."
+                : " Personajes contenidos en los episodios de la serie de televisión Rick and Morty. Página con individuos que parecieron en un lugar      específico. Datos obtenidos por API."}
+
               <div className="underline text-md text-[#a31a2e]">
                 <a
                   href="https://academloreactentregable3.netlify.app/"
                   target="_blank"
                 >
-                  Enlace
+                  {languaje === "English" ? "Link" : "Enlace"}
                 </a>
               </div>
             </div>
@@ -543,15 +556,18 @@ const home = () => {
 
       {/* Formulario de contacto*/}
       <div id="contacto" className="text-4xl pb-4">
-        Contacto
+        {languaje === "English" ? "Contact" : "Contacto"}
       </div>
       <article className="pb-4 flex flex-row flex-wrap justify-center ">
         <div className="w-[320px]">
           <div className="text-lg text-[#5B6876] pb-2 px-2 mt-3">
-            Ahora que ya conoce bastante acerca de mi, digame si tiene interés
-            en trabajar conmigo.
+            {languaje === "English"
+              ? "Now that you know a lot about me, let me know if you are interested in working with me."
+              : "Ahora que ya conoce bastante acerca de mi, digame si tiene interés en trabajar conmigo."}
+
             <div className=" mt-2">
-              Teléfono:&nbsp;
+              {languaje === "English" ? "Telephone" : "Teléfono:"}
+              &nbsp;
               <a className=" text-[#5221EB]" href="tel:+573173167289">
                 +57-3173167289
               </a>
@@ -571,10 +587,10 @@ const home = () => {
           >
             <div className="pb-2 ">
               <label className="block pb-1" htmlFor="name">
-                Nombre
+                {languaje === "English" ? "Name" : "Nombre"}
               </label>
               <input
-                className="block bg-[#eeeeee] "
+                className="block bg-[#eeeeee] text-black "
                 type="text"
                 name="name"
                 id="name"
@@ -585,25 +601,30 @@ const home = () => {
                 Email
               </label>
               <input
-                className="block bg-[#eeeeee]"
+                className="block bg-[#eeeeee] text-black"
                 type="email"
+                pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                size="30"
                 name="email"
                 id="email"
+                required
               />
             </div>
             <div className="block pb-4">
               <label className="block pb-1" htmlFor="message">
-                Mensaje
+                {languaje === "English" ? "Message" : "Mensaje"}
               </label>
               <textarea
-                className="block bg-[#eeeeee]"
+                className="block bg-[#eeeeee] text-black"
                 name="Message"
                 id="message"
+                required
+                minlength="8"
               ></textarea>
             </div>
             <div className="flex">
               <button className="px-3 py-2 bg-[#5221EB] mx-auto text-[#eeeeee]">
-                Enviar
+                {languaje === "English" ? "send" : "Enviar"}
               </button>
             </div>
           </form>
@@ -623,24 +644,10 @@ const home = () => {
           <div className="flex flex-row space-x-5">
             <a
               className="hover:animate-bounce"
-              href="https://twitter.com/andresLaraamaya"
-              target="_blank"
-            >
-              <i className="bx bxl-twitter text-[#1DB9F0]"></i>
-            </a>
-            <a
-              className="hover:animate-bounce"
               href="https://www.linkedin.com/in/andreslaraamaya/"
               target="_blank"
             >
               <i className="bx bxl-linkedin-square text-[#0A66C2]"></i>
-            </a>
-            <a
-              className="hover:animate-bounce"
-              href="https://www.facebook.com/profile.php?id=100088672094738"
-              target="_blank"
-            >
-              <i className="bx bxl-facebook-circle text-[#1B74E4]"></i>
             </a>
             <a
               className="hover:animate-bounce "
@@ -648,6 +655,21 @@ const home = () => {
               target="_blank"
             >
               <i className="bx bxl-github text-black "></i>
+            </a>
+            <a
+              className="hover:animate-bounce"
+              href="https://twitter.com/andresLaraamaya"
+              target="_blank"
+            >
+              <i className="bx bxl-twitter text-[#1DB9F0]"></i>
+            </a>
+
+            <a
+              className="hover:animate-bounce"
+              href="https://www.facebook.com/profile.php?id=100088672094738"
+              target="_blank"
+            >
+              <i className="bx bxl-facebook-circle text-[#1B74E4]"></i>
             </a>
           </div>
         </section>
@@ -658,7 +680,7 @@ const home = () => {
               className="hover:underline hover:underline-offset-4 hover:text-[#222222] hover:animate-pulse"
               href="#home"
             >
-              Home
+              {languaje === "English" ? "Home" : "Inicio"}
             </a>
           </div>
 
@@ -667,7 +689,7 @@ const home = () => {
               className="hover:underline hover:underline-offset-4 hover:text-[#222222] hover:animate-pulse"
               href="#destrezas"
             >
-              Destrezas
+              {languaje === "English" ? "Abilities" : "Destrezas"}
             </a>
           </div>
           <div>
@@ -675,7 +697,7 @@ const home = () => {
               className="hover:underline hover:underline-offset-4 hover:[#222222] hover:animate-pulse"
               href="#proyectos"
             >
-              Proyectos
+              {languaje === "English" ? "Projects" : "Proyectos"}
             </a>
           </div>
 
