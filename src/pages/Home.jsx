@@ -583,8 +583,6 @@ const home = () => {
         <div className="pb-6 mx-auto">
           <form
             action="https://script.google.com/macros/s/AKfycbzzDo3NE1TKyhgNALNvgy5osKUdCLb3plGnkND2J9j8-VifaR6GoNxRSdkA-i0BnTCgqA/exec"
-           
-
             //action="https://formsubmit.co/angillama@gmail.com"
             //action="mailto:angillama@gmail.com"
             method="POST"
