@@ -582,11 +582,10 @@ const home = () => {
         </div>
         <div className="pb-6 mx-auto">
           <form
-            //action="https://script.google.com/macros/s/AKfycbzVi2WA0gsCYD8xzfkX0KWvsnDVzB_mAs6jQko_Rn_KzAmRucHTo1KZLqyiYF4iuhdr9g/exec"
-            //id google: AKfycbzVi2WA0gsCYD8xzfkX0KWvsnDVzB_mAs6jQko_Rn_KzAmRucHTo1KZLqyiYF4iuhdr9g
-            //Web app:https://script.google.com/macros/s/AKfycbzVi2WA0gsCYD8xzfkX0KWvsnDVzB_mAs6jQko_Rn_KzAmRucHTo1KZLqyiYF4iuhdr9g/exec
+            action="https://script.google.com/macros/s/AKfycbzzDo3NE1TKyhgNALNvgy5osKUdCLb3plGnkND2J9j8-VifaR6GoNxRSdkA-i0BnTCgqA/exec"
+           
 
-            action="https://formsubmit.co/angillama@gmail.com"
+            //action="https://formsubmit.co/angillama@gmail.com"
             //action="mailto:angillama@gmail.com"
             method="POST"
           >
