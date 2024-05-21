@@ -3,8 +3,9 @@
 
 - list resources
     - fonts ✓
-
     - Colors ✓
+- *** od. ATS  english, resumida english
+
 
 - icono
 
