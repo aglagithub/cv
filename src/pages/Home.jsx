@@ -84,6 +84,18 @@ const home = () => {
             >
               CV ATS
             </a>
+            <a
+              href="https://github.com/aglagithub/cv/blob/main/public/docs/CV%20ATS%20Andres%20Gilberto%20Lara%20Amaya.%20SP.pdf"
+              download="Andres%20Gilberto%20Lara%20Amaya.%20SP.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className={` pr-2  hover:underline hover:underline-offset-4
+            ${
+              colorScheme === "dark" ? "hover:text-black" : "hover:text-white"
+            }`}
+            >
+              CV FULL
+            </a>
           </div>
           <div className="flex justify-between flex-wrap items-stretch font-semibold">
             <a
