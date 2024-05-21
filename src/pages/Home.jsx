@@ -58,7 +58,7 @@ const home = () => {
               onClick={languajeChange}
               className="  hover:underline hover:underline-offset-4 rounded "
             >
-              {languaje === "English" ? "A Español" : "To English"}
+              {languaje === "English" ? "Español " : "English "}
             </div>
             <a
               href="https://github.com/aglagithub/cv/blob/main/public/docs/CV%20Andres%20Gilberto%20Lara%20Amaya.%20SP.pdf"
