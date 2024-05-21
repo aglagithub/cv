@@ -70,7 +70,7 @@ const home = () => {
               colorScheme === "dark" ? "hover:text-black" : "hover:text-white"
             }`}
             >
-              CV pdf
+              &nbsp; CV pdf
             </a>
             <a
               href="https://github.com/aglagithub/cv/blob/main/public/docs/CV%20ATS%20Andres%20Gilberto%20Lara%20Amaya.%20SP.pdf"
