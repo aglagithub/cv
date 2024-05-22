@@ -92,8 +92,8 @@ const home = () => {
             </div>
             {/* aqui escoger el documento en idioma correcto*/}
             <a
-              href={CVDocs.SP.CVATS.link}
-              download={CVDocs.SP.CVATS.name}
+              href={languaje === "English" ? CVDocs.EN.CVATS.link : CVDocs.SP.CVATS.link}
+              download={languaje === "English" ? CVDocs.EN.CVATS.name: CVDocs.SP.CVATS.name}
               target="_blank"
               rel="noreferrer"
               className={` pr-2  hover:underline hover:underline-offset-4 
