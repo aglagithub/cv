@@ -104,8 +104,8 @@ const home = () => {
               &nbsp; CV pdf
             </a>
             <a
-              href="https://github.com/aglagithub/cv/blob/main/public/docs/CV%20ATS%20Andres%20Gilberto%20Lara%20Amaya.%20SP.pdf"
-              download="Andres%20Gilberto%20Lara%20Amaya.%20SP.pdf"
+              href={CVDocs.SP.CVMin.link}
+              download={CVDocs.SP.CVMin.name}
               target="_blank"
               rel="noreferrer"
               className={` pr-2  hover:underline hover:underline-offset-4
@@ -116,8 +116,8 @@ const home = () => {
               CV ATS
             </a>
             <a
-              href="https://github.com/aglagithub/cv/blob/main/public/docs/CV%20ATS%20Andres%20Gilberto%20Lara%20Amaya.%20SP.pdf"
-              download="Andres%20Gilberto%20Lara%20Amaya.%20SP.pdf"
+              href={CVDocs.SP.CVFull.link}
+              download={CVDocs.SP.CVFull.link}
               target="_blank"
               rel="noreferrer"
               className={` pr-2  hover:underline hover:underline-offset-4
