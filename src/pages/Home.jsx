@@ -92,8 +92,16 @@ const home = () => {
             </div>
             {/* aqui escoger el documento en idioma correcto*/}
             <a
-              href={languaje === "English" ? CVDocs.EN.CVATS.link : CVDocs.SP.CVATS.link}
-              download={languaje === "English" ? CVDocs.EN.CVATS.name: CVDocs.SP.CVATS.name}
+              href={
+                languaje === "English"
+                  ? CVDocs.EN.CVATS.link
+                  : CVDocs.SP.CVATS.link
+              }
+              download={
+                languaje === "English"
+                  ? CVDocs.EN.CVATS.name
+                  : CVDocs.SP.CVATS.name
+              }
               target="_blank"
               rel="noreferrer"
               className={` pr-2  hover:underline hover:underline-offset-4 
@@ -101,11 +109,19 @@ const home = () => {
               colorScheme === "dark" ? "hover:text-black" : "hover:text-white"
             }`}
             >
-              &nbsp; CV pdf
+              &nbsp; CV ATS
             </a>
             <a
-              href={CVDocs.SP.CVMin.link}
-              download={CVDocs.SP.CVMin.name}
+              href={
+                languaje === "English"
+                  ? CVDocs.EN.CVMin.link
+                  : CVDocs.SP.CVMin.link
+              }
+              download={
+                languaje === "English"
+                  ? CVDocs.EN.CVMin.name
+                  : CVDocs.SP.CVMin.name
+              }
               target="_blank"
               rel="noreferrer"
               className={` pr-2  hover:underline hover:underline-offset-4
@@ -113,7 +129,7 @@ const home = () => {
               colorScheme === "dark" ? "hover:text-black" : "hover:text-white"
             }`}
             >
-              CV ATS
+              CV MIN
             </a>
             <a
               href={CVDocs.SP.CVFull.link}
