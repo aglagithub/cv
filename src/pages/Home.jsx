@@ -5,14 +5,32 @@ const home = () => {
   const [colorScheme, setcolorScheme] = useState("light");
   const [CVDocs, setCVInfo] = useState({
     EN: {
-      CVATS: { link: "", name: "" },
-      CVMin: { link: "", name: "" },
-      CVFull: { link: "", name: "" },
+      CVATS: {
+        link: "https://github.com/aglagithub/cv/blob/main/public/docs/CV%20English/CV%20ATS%20EN.%20Andres%20Gilberto%20Lara%20Amaya.%20cc79346683.pdf",
+        name: "CV ATS EN. Andres Gilberto Lara Amaya. cc79346683.pdf",
+      },
+      CVMin: {
+        link: "https://github.com/aglagithub/cv/blob/main/public/docs/CV%20English/CV%20EN%20Minimalist.Andres%20Gilberto%20Lara%20Amaya.%20cc79346683%20.pdf",
+        name: "CV EN Minimalist.Andres Gilberto Lara Amaya. cc79346683.pdf",
+      },
+      CVFull: {
+        link: "https://github.com/aglagithub/cv/blob/main/public/docs/CV%20English/CV%20Full%20EN.%20Andres%20Gilberto%20Lara%20Amaya.%20cc79346683.pdf",
+        name: "CV Full EN. Andres Gilberto Lara Amaya. cc79346683.pdf",
+      },
     },
     SP: {
-      CVATS: { link: "", name: "" },
-      CVMin: { link: "", name: "" },
-      CVFull: { link: "", name: "" },
+      CVATS: {
+        link: "https://github.com/aglagithub/cv/blob/main/public/docs/CV%20Espa%C3%B1ol/CV%20ATS%20SP.%20Andres%20Gilberto%20Lara%20Amaya.%20cc79346683.pdf",
+        name: "CV ATS SP. Andres Gilberto Lara Amaya. cc79346683.pdf",
+      },
+      CVMin: {
+        link: "https://github.com/aglagithub/cv/blob/main/public/docs/CV%20Espa%C3%B1ol/CV%20SP%20Minimalist.Andres%20Gilberto%20Lara%20Amaya.%20cc79346683%20.pdf",
+        name: "CV SP Minimalist.Andres Gilberto Lara Amaya. cc79346683.pdf",
+      },
+      CVFull: {
+        link: "https://github.com/aglagithub/cv/blob/main/public/docs/CV%20Espa%C3%B1ol/CV%20Full%20SP.%20Andres%20Gilberto%20Lara%20Amaya.%20cc79346683.pdf",
+        name: "CV Full SP. Andres Gilberto Lara Amaya. cc79346683.pdf",
+      },
     },
   });
 
