@@ -132,8 +132,16 @@ const home = () => {
               CV MIN
             </a>
             <a
-              href={CVDocs.SP.CVFull.link}
-              download={CVDocs.SP.CVFull.link}
+              href={
+                languaje === "English"
+                  ? CVDocs.EN.CVFull.link
+                  : CVDocs.SP.CVFull.link
+              }
+              download={
+                languaje === "English"
+                  ? CVDocs.EN.CVFull.name
+                  : CVDocs.SP.CVFull.name
+              }
               target="_blank"
               rel="noreferrer"
               className={` pr-2  hover:underline hover:underline-offset-4
