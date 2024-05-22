@@ -3,6 +3,18 @@ import React, { useState } from "react";
 const home = () => {
   const [languaje, setLanguaje] = useState("Español");
   const [colorScheme, setcolorScheme] = useState("light");
+  const [CVDocs, setCVInfo] = useState({
+    EN: {
+      CVATS: { link: "", name: "" },
+      CVMin: { link: "", name: "" },
+      CVFull: { link: "", name: "" },
+    },
+    SP: {
+      CVATS: { link: "", name: "" },
+      CVMin: { link: "", name: "" },
+      CVFull: { link: "", name: "" },
+    },
+  });
 
   const languajeChange = () => {
     console.log("Languaje Change");
@@ -60,6 +72,7 @@ const home = () => {
             >
               {languaje === "English" ? "Español " : "English "}
             </div>
+            {/* aqui escoger el documento en idioma correcto*/}
             <a
               href="https://github.com/aglagithub/cv/blob/main/public/docs/CV%20Andres%20Gilberto%20Lara%20Amaya.%20SP.pdf"
               download="Andres%20Gilberto%20Lara%20Amaya.%20SP.pdf"
